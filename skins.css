@@ -1,7 +1,7 @@
 /* AO3 defaults */
 body {
 	margin: 0;
-	font: 100%/1.125 'Lucida Grande','Lucida Sans Unicode','GNU Unifont',Verdana,Helvetica,sans-serif;
+	font: 15px/1.125 'Lucida Grande','Lucida Sans Unicode','GNU Unifont',Verdana,Helvetica,sans-serif;
 }
 
 main {
@@ -9,6 +9,11 @@ main {
 	font-size: 1.08em;
 	margin: .75em 0;
 	border-bottom: 1px solid;
+	font-size: .875em;
+}
+
+@media screen and (min-width: 672px) {
+	main { font-size: 1em; }
 }
 
 #workskin {
