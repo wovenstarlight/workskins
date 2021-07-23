@@ -40,6 +40,11 @@ a:focus {
 	outline: 1px dotted;
 }
 
+hr {
+	width: 33%;
+	margin: .875em auto 1.2525em;
+}
+
 
 /* Navigation and settings section */
 #preview {
