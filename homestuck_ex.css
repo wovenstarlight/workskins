@@ -40,14 +40,14 @@
 	color: #2cff4b;
 }
 
-/* PESTERLOG
-Best applied to a <div> surrounding all paragraphs containing texts/speech.
-Note that all paragraph spacing is turned off, so all lines are spaced apart
-equally, whether separated by a <br> linebreak tag or a <p> paragraph tag.
-I recommend separating each new speaker's text/speech into a new paragraph, and
-putting <br> linebreak tags between each individual lines from that person.
-This is to accommodate users who turn off user styling, disabling this workskin.
-See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
+/**	PESTERLOG
+	Best applied to a <div> surrounding all paragraphs containing texts/speech.
+	Note that all paragraph spacing is turned off, so all lines are spaced apart
+	equally, whether separated by a <br> linebreak tag or a <p> paragraph tag.
+	I recommend separating each new speaker's text/speech into a new paragraph, and
+	putting <br> linebreak tags between each individual lines from that person.
+	This is to accommodate users who turn off user styling, disabling this workskin.
+	See the corresponding HTML for an example of a pesterlog (under "PESTERLOG SAMPLE").
 */
 #workskin .block {
 	max-width: 650px;
@@ -74,9 +74,12 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 /** CUSTOM CHAT LOG
 	If you'd like your own background and text colors for a pesterlog block:
 	- Modify the code given below:
-		- Change CUSTOM to your special pesterlog's name. Preferably, pick a single short word.
-		- Change the colors to your own (hex or RGB format). Make sure the colors contrast enough to be easily readable!
-	- In the HTML, apply to <div> tags in the format class="CUSTOM block". Note that the name is case-sensitive- "custom" is NOT the same as "CUSTOM"!
+		- Change CUSTOM to your special pesterlog's name. Preferably,
+		  pick a single short word.
+		- Change the colors to your own (hex or RGB format). Make sure the colors
+		  contrast enough to be easily readable!
+	- In the HTML, apply to <div> tags in the format class="CUSTOM block".
+	  Note that the name is case-sensitive- "custom" is NOT the same as "CUSTOM"!
 */
 #workskin .CUSTOM.block {
 	background: #6c0b6b; /* Background color */
@@ -85,8 +88,9 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 
 
 /** All standard text.
-	Note that usage of this is only required when styles are being used outside of a .block element.
-	Use class="text secondclass" and replace <secondclass> with the appropriate character name
+	Note that usage of this is only required when styles are being used outside of
+	a .block element. Use class="text secondclass" and replace <secondclass> with
+	the appropriate character name.
 */
 #workskin .text {
 	font-size: 14px;
@@ -94,23 +98,34 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 	font-family: "Courier New", courier, monospace;
 }
 
-/** CANON COLORS
+/**	CANON COLORS
 	Each character is listed with each of the following, as applicable.
 	- First name
 	- Nicknames
 	- Chumhandle (full, all versions)
-	- Chumhandle abbreviations (Characters with duplicate abbreviations have their abbreviations suffixed with "a" or "b" for alpha or beta respectively. Characters turned into sprites have their abbreviations followed by "s")
+	- Chumhandle abbreviations (Characters with duplicate abbreviations have their
+								abbreviations suffixed with "a" or "b" for alpha or beta
+								respectively. Characters turned into sprites have their
+								abbreviations followed by "s")
 	- Name of group or family (non-humans only)
 
 	All characters' styles are annotated with their full names for easier searching.
 
 	SPECIAL CASES
-	- Jasprose and Davepeta use different styles for their names and their actual speech/texts. The styles for their names are .<chara>-name and .<chara>name, and for their speech/texts are .<chara>-text and .<chara>text. Replace <chara> with the appropriate character (nick)name.
-	- Similarly, Jade Harley and Jane Crocker use different styles when grimbark and crockertier respectively. The styles for their names are the standard: .jade and .jane, and the styles for their speech/texts are .grimbark and .crockertier respectively.
-	- The Vantases have two main styles, gray and red. Instead of a single .vantas style, there's two: .vantasb for gray, and .vantasa for red.
+	- Jasprose and Davepeta use different styles for their names and their actual speech/texts.
+	  The styles for their names are .<chara>-name and .<chara>name, and for their speech/texts
+	  are .<chara>-text and .<chara>text. Replace <chara> with the appropriate character (nick)name.
+	- Similarly, Jade Harley and Jane Crocker use different styles when grimbark and
+	  crockertier respectively. The styles for their names are the standard: .jade and
+	  .jane, and the styles for their speech/texts are .grimbark and .crockertier respectively.
+	- The Vantases have two main styles, gray and red. Instead of a single .vantas style,
+	  there's two: .vantasb for gray, and .vantasa for red.
 
 	CUSTOM CHARACTER NAMES
-	I've added some personal headcanon names for special characters, including Davesprite and all the human ancestors/guardians. Each of these is tagged with the comment "custom". Feel free to change/delete these as you like. Alternatively, add your own custom names using the same format!
+	I've added some personal headcanon names for special characters, including Davesprite
+	and all the human ancestors/guardians. Each of these is tagged with the comment "custom".
+	Feel free to change/delete these as you like. Alternatively, add your own custom names
+	using the same format!
 */
 
 /* Standard white text */
@@ -758,7 +773,9 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 }
 
 /** SPECIAL COLORS
-	This is a collection of non-character text colors, added partly for reference and partly for cases where you need these for highlighting special words. The majority of the colors here have both colored text and backgrounds.
+	This is a collection of non-character text colors, added partly for reference and
+	partly for cases where you need these for highlighting special words. The majority
+	of the colors here have both colored text and backgrounds.
 	This list contains:
 	- Aspects
 	- Denizens (colors picked from known denizens' browser logos, and hypothetical
@@ -1358,4 +1375,56 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 
 #workskin .trollskin {
 	color: #c4c4c4;
+}
+
+/** INTERACTIVE PESTERCHUM LAYOOUT
+	These are styles for a table layout version of pesterlogs. When hovered over,
+	specific lines will be highlighted in a slightly lighter color. This design
+	accommodates both the standard (user)name + message layout, as well as a
+	second layout including (user)name, message, and timestamp of message.
+
+	To use these styles, create a <table class="ichum">. For each new message,
+	create a new <tr> table row. Each table row should contain at the very least
+	one <td> cell with the (user)name, and one <td> cell with the message.
+	A third <td> cell can be added to include the timestamp.
+
+	You may want to place the entire pesterlog inside a div.block to fully mimic
+	authentic Homestuck layouts.
+
+	See the corresponding HTML for an example of an interactive pesterlog
+	(under "Interactive pesterlog").
+*/
+#workskin .ichum {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Courier New, courier, monospace;
+	border-collapse: collapse;
+	margin: 10px 0;
+}
+
+#workskin .ichum td:nth-child(even) {
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	padding-left: 6px;
+}
+
+#workskin .ichum td:first-child {
+	text-align: left;
+	vertical-align: top;
+}
+
+#workskin .ichum td:nth-child(3) {
+	text-align: right;
+	vertical-align: top;
+}
+
+#workskin .block .ichum tr:hover {
+	background-color: #ffffff;
+}
+#workskin .scratch.block .ichum tr:hover {
+	background-color: #292929;
+}
+#workskin .ichum tr:hover {
+	background-color: #2222;
 }
