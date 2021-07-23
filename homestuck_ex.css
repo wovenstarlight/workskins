@@ -82,3 +82,170 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 	background: #6c0b6b; /* Background color */
 	color: #ffffff; /* Text color */
 }
+
+
+/** All standard text.
+	Note that usage of this is only required when styles are being used outside of a .block element.
+	Use class="text secondclass" and replace <secondclass> with the appropriate character name
+*/
+#workskin .text {
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "Courier New", courier, monospace;
+}
+
+/** CANON COLORS
+	Each character is listed with each of the following, as applicable.
+	- First name
+	- Nicknames
+	- Chumhandle (full, all versions)
+	- Chumhandle abbreviations (Characters with duplicate abbreviations have their abbreviations suffixed with "a" or "b" for alpha or beta respectively. Characters turned into sprites have their abbreviations followed by "s")
+	- Name of group or family (non-humans only)
+
+	All characters' styles are annotated with their full names for easier searching.
+
+	SPECIAL CASES
+	- Jasprose and Davepeta use different styles for their names and their actual speech/texts. The styles for their names are .<chara>-name and .<chara>name, and for their speech/texts are .<chara>-text and .<chara>text. Replace <chara> with the appropriate character (nick)name.
+	- Similarly, Jade Harley and Jane Crocker use different styles when grimbark and crockertier respectively. The styles for their names are the standard: .jade and .jane, and the styles for their speech/texts are .grimbark and .crockertier respectively.
+	- The Vantases have two main styles, gray and red. Instead of a single .vantas style, there's two: .vantasb for gray, and .vantasa for red.
+
+	CUSTOM CHARACTER NAMES
+	I've added some personal headcanon names for special characters, including Davesprite and all the human ancestors/guardians. Each of these is tagged with the comment "custom". Feel free to change/delete these as you like. Alternatively, add your own custom names using the same format!
+*/
+
+/* Standard white text */
+#workskin .white { color: #ffffff; }
+
+/* Standard black text */
+#workskin .black,
+/* Jade Harley, grimbark speech and text */
+#workskin .grimbark,
+/* Andrew Hussie */
+#workskin .hussie,
+#workskin .andrewhussie,
+#workskin .andrew,
+#workskin .huss {
+	color: #000000;
+}
+
+/* John Egbert */
+#workskin .john,
+#workskin .ghostytrickster,
+#workskin .gtb,
+#workskin .ectobiologist,
+#workskin .eb,
+/* Jane's Tavrosprite, Tavrisprite, and GCATavrosprite */
+#workskin .tavrosprite,
+#workskin .tavrisprite,
+#workskin .tavris,
+#workskin .gcatavrosprite,
+#workskin .gcatavros {
+	color: #0715cd;
+}
+
+/* Rose Lalonde */
+#workskin .rose,
+#workskin .tentacletherapist,
+#workskin .ttb,
+/* Roxy's Fefetasprite */
+#workskin .fefetasprite,
+#workskin .fefeta,
+/* Roxy's Rosesprite, and Jasprosesprite^2's speech and text */
+#workskin .rosesprite,
+#workskin .jasprosesprite-text,
+#workskin .jasprosespritetext,
+#workskin .jasprose-text,
+#workskin .jasprosetext {
+	color: #b536da;
+}
+
+/* Dave Strider */
+#workskin .dave,
+#workskin .turntechgodhead,
+#workskin .tgb,
+/* Dirk's Auto-Responder / Lil Hal Strider */
+#workskin .ar,
+#workskin .hal,
+/* Dirk's Equiusprite and Arquiusprite */
+#workskin .equiusprite,
+#workskin .arquiusprite,
+#workskin .arquius {
+	color: #e00707;
+}
+
+/* Jade Harley */
+#workskin .jade,
+#workskin .gardengnostic,
+#workskin .ggb,
+/* Jake's Erisolsprite */
+#workskin .erisolsprite,
+#workskin .erisol,
+/* Jake's Nepetasprite, and Davepetasprite^2's name and B33 < prefix */
+#workskin .nepetasprite,
+#workskin .davepetasprite-name,
+#workskin .davepetaspritename,
+#workskin .davepeta-name,
+#workskin .davepetaname {
+	color: #4ac925;
+}
+
+/* Jane Crocker */
+#workskin .jane,
+#workskin .gutsygumshoe,
+#workskin .gga,
+/* John's Nannasprite */
+#workskin .nannasprite {
+	color: #00d5f2;
+}
+
+/* Jane's speech and text when Crockertier */
+#workskin .crockertier,
+/* Dirk's Squarewave */
+#workskin .squarewave {
+	color: #ff0000;
+}
+
+/* Jake English */
+#workskin .jake,
+#workskin .golgothasterror,
+#workskin .gta,
+/* Jade's Becsprite and Jadesprite */
+#workskin .becsprite,
+#workskin .jadesprite,
+#workskin .ggs {
+	color: #1f9400;
+}
+
+/* Roxy Lalonde */
+#workskin .roxy,
+#workskin .tipsygnostalgic,
+#workskin .tga {
+	color: #ff6ff2;
+}
+
+/* Dirk Strider */
+#workskin .dirk,
+#workskin .timaeustestified,
+#workskin .tta,
+/* Dave's Davesprite */
+#workskin .davesprite,
+#workskin .tgs,
+#workskin .byrd, /* custom */
+/* Doomed Dave's Calsprite */
+#workskin .calsprite,
+/* Davepetasprite^2's speech and text */
+#workskin .davepetasprite-text,
+#workskin .davepetaspritetext,
+#workskin .davepeta-text,
+#workskin .davepetatext {
+	color: #f2a400;
+}
+
+/* Jaspersprite, and Jasprosesprite^2's name */
+#workskin .jaspersprite,
+#workskin .jasprosesprite-name,
+#workskin .jasprosespritename,
+#workskin .jasprose-name,
+#workskin .jasprosename {
+	color: #f141ef;
+}
