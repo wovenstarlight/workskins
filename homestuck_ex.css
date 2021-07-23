@@ -1399,7 +1399,7 @@
 	font-weight: bold;
 	font-family: Courier New, courier, monospace;
 	border-collapse: collapse;
-	margin: 10px 0;
+	margin: 10px auto;
 }
 
 #workskin .ichum td:nth-child(even) {
