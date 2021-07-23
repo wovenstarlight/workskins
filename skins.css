@@ -9,7 +9,7 @@ main {
 	font-size: 1.08em;
 }
 
-main > * {
+#workskin {
 	max-width: 63em;
 	margin: auto;
 }
