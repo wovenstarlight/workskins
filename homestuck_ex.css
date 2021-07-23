@@ -1,0 +1,84 @@
+/* Standard header prompt and commands */
+#workskin .prompt { /* Title of the top of the page. Apply to <p> tags. ==> */
+	font-size: 32px;
+	font-weight: bold;
+	font-family: "Courier New", courier, monospace;
+	color: #000;
+}
+#workskin .command1,
+#workskin .com1 { /* Arrow to the next page.
+					Use &gt; instead of > and apply using <span> tag, so that
+					it looks like <span class="command1">&gt;</span>. */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	color: #000000;
+}
+#workskin .command2,
+#workskin .com2 { /* Command for the next page, looks like a link. Apply to <span> tag. */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #0000ee;
+}
+
+/** Scratch version of header and prompt
+	To use these, add class="scratch secondclass" to the element,
+	where secondclass is one of < prompt | command1 | com1 | command2 | com2 >.
+	The <p> or <div> containing the prompt/command should be of class "intermission".
+*/
+#workskin .scratch.prompt { /* Title of the top of the page. ==> */
+	color: #fff;
+}
+#workskin .scratch.command1,
+#workskin .scratch.com1 { /* Arrow to the next page */
+	color: #ffffff;
+}
+#workskin .scratch.command2,
+#workskin .scratch.com2 { /* Command for the next page, looks like a link */
+	color: #2cff4b;
+}
+
+/* PESTERLOG
+Best applied to a <div> surrounding all paragraphs containing texts/speech.
+Note that all paragraph spacing is turned off, so all lines are spaced apart
+equally, whether separated by a <br> linebreak tag or a <p> paragraph tag.
+I recommend separating each new speaker's text/speech into a new paragraph, and
+putting <br> linebreak tags between each individual lines from that person.
+This is to accommodate users who turn off user styling, disabling this workskin.
+See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
+*/
+#workskin .block {
+	max-width: 650px;
+	margin: 20px auto;
+	border: 1px dashed gray;
+	padding: 10px 35px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Courier New, courier, monospace;
+	background: #eeeeee;
+	color: #000000;
+}
+#workskin .block p { margin: 0; }
+
+/** Pesterlog, scratch version.
+	White text on a green background, instead of black text on a gray background.
+	Apply to <div> tags in the format class="scratch block".
+*/
+#workskin .scratch.block {
+	background: #000000;
+	color: #ffffff;
+}
+
+/** CUSTOM CHAT LOG
+	If you'd like your own background and text colors for a pesterlog block:
+	- Modify the code given below:
+		- Change CUSTOM to your special pesterlog's name. Preferably, pick a single short word.
+		- Change the colors to your own (hex or RGB format). Make sure the colors contrast enough to be easily readable!
+	- In the HTML, apply to <div> tags in the format class="CUSTOM block". Note that the name is case-sensitive- "custom" is NOT the same as "CUSTOM"!
+*/
+#workskin .CUSTOM.block {
+	background: #6c0b6b; /* Background color */
+	color: #ffffff; /* Text color */
+}
