@@ -5,8 +5,10 @@ body {
 }
 
 main {
-	padding: 1% 3.5%;
+	padding: 1% 3.5% 3%;
 	font-size: 1.08em;
+	margin: .75em 0;
+	border-bottom: 1px solid;
 }
 
 #workskin {
@@ -113,6 +115,8 @@ body.low-contrast #skintoggle a:hover {
 }
 
 body.low-contrast main {
-	margin: .5em;
+	margin: .75em .5em 1.5em;
+	padding-bottom: 1%;
+	border: none;
 	background-color: #564b3f;
 }
