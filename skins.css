@@ -84,6 +84,7 @@ body.default #skintoggle {
 	background: #900 url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png);
 	color: #fff;
 }
+body.default #skintoggle a.selected,
 body.default #skintoggle a:hover {
 	background: #ddd;
 	color: #111;
@@ -108,6 +109,7 @@ body.reversi #skintoggle {
 	background: url(https://archiveofourown.org/images/skins/textures/tiles/black-noise.jpg);
 	color: #fff;
 }
+body.reversi #skintoggle a.selected,
 body.reversi #skintoggle a:hover { background: #2a2a2a; }
 
 body.reversi #workskin a,
@@ -132,6 +134,7 @@ body.low-contrast #skintoggle {
 	background-color: #2b2823;
 	color: #ffffffbf;
 }
+body.low-contrast #skintoggle a.selected,
 body.low-contrast #skintoggle a:hover {
 	color: #c22;
 	background: #000c;
