@@ -941,3 +941,421 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 #workskin .athblue {
 	color: #0000ff;
 }
+
+/* Blood colors */
+
+/* Megido blood */
+#workskin .megidoblood,
+#workskin .aradiablood,
+#workskin .arablood,
+#workskin .apocalypsearisenblood,
+#workskin .aablood,
+#workskin .damarablood,
+#workskin .handmaidblood,
+#workskin .kangarammomblood,
+#workskin .kangaram-momblood,
+#workskin .rammomblood,
+#workskin .ram-momblood {
+	color: #a10000;
+}
+
+/* Nitram blood */
+#workskin .nitramblood,
+#workskin .tavrosblood,
+#workskin .tavblood,
+#workskin .adiostoreadorblood,
+#workskin .atblood,
+#workskin .rufiohblood,
+#workskin .summonerblood,
+#workskin .tinkerbullblood {
+	color: #a25203;
+}
+
+/* Captor blood */
+#workskin .captorblood,
+#workskin .solluxblood,
+#workskin .solblood,
+#workskin .twinarmageddonsblood,
+#workskin .tablood,
+#workskin .mitunablood,
+#workskin .psiioniicblood,
+#workskin .psiblood,
+#workskin .psiiblood,
+#workskin .helmsmanblood,
+#workskin .biclopsblood,
+#workskin .biclopsdadblood,
+#workskin .biclops-dadblood,
+#workskin .bicyclopsblood,
+#workskin .bicyclopsdadblood,
+#workskin .bicyclops-dadblood {
+	color: #a1a100;
+}
+
+/* Blood of humans, exiles, and Vantases*/
+#workskin .humanblood,
+#workskin .johnblood,
+#workskin .roseblood,
+#workskin .daveblood,
+#workskin .jadeblood,
+#workskin .janeblood,
+#workskin .jakeblood,
+#workskin .roxyblood,
+#workskin .dirkblood,
+#workskin .dadblood,
+#workskin .momblood,
+#workskin .broblood,
+#workskin .grandpablood,
+#workskin .grandmablood,
+#workskin .poppopblood,
+#workskin .nannablood,
+#workskin .exileblood,
+#workskin .vantasblood,
+#workskin .karkatblood,
+#workskin .karblood,
+#workskin .kkblood,
+#workskin .carcinogeneticistblood,
+#workskin .cgblood,
+#workskin .kankriblood,
+#workskin .signlessblood,
+#workskin .suffererblood,
+#workskin .crabdadblood {
+	color: #ff0000;
+}
+
+/* Leijon blood */
+#workskin .leijonblood,
+#workskin .nepetablood,
+#workskin .nepblood,
+#workskin .arseniccatnipblood,
+#workskin .acblood,
+#workskin .meulinblood,
+#workskin .discipleblood,
+#workskin .pounceblood,
+#workskin .pouncedeleonblood,
+#workskin .pounce-de-leonblood {
+	color: #2e4800;
+}
+
+/* Maryam blood */
+#workskin .maryamblood,
+#workskin .kanayablood,
+#workskin .kanblood,
+#workskin .grimauxiliatrixblood,
+#workskin .gablood,
+#workskin .porrimblood,
+#workskin .dolorosablood,
+#workskin .mothergrubblood,
+#workskin .mother-grubblood,
+#workskin .virginmothergrubblood,
+#workskin .virgin-mother-grubblood {
+	color: #078446;
+}
+
+/* Pyrope blood */
+#workskin .pyropeblood,
+#workskin .tereziblood,
+#workskin .tezblood,
+#workskin .tzblood,
+#workskin .gallowscalibratorblood,
+#workskin .gcblood,
+#workskin .latulablood,
+#workskin .neophyteblood,
+#workskin .redglareblood,
+#workskin .dragonblood,
+#workskin .pyralspiteblood {
+	color: #008282;
+}
+
+/* Serket blood */
+#workskin .serketblood,
+#workskin .vriskablood,
+#workskin .vrisblood,
+#workskin .arachnidsgripblood,
+#workskin .agblood,
+#workskin .araneablood,
+#workskin .marquiseblood,
+#workskin .spinneretblood,
+#workskin .mindfangblood,
+#workskin .spiderblood,
+#workskin .spidermomblood,
+#workskin .spider-momblood {
+	color: #004182;
+}
+
+/* Zahhak blood */
+#workskin .zahhakblood,
+#workskin .equiusblood,
+#workskin .centaurstesticleblood,
+#workskin .ctblood,
+#workskin .horussblood,
+#workskin .executorblood,
+#workskin .expatri8blood,
+#workskin .darkleerblood,
+#workskin .aurthourblood,
+#workskin .altaradiablood {
+	color: #0021cb;
+}
+
+/* Makara blood */
+#workskin .makarablood,
+#workskin .gamzeeblood,
+#workskin .gamblood,
+#workskin .terminallycapriciousblood,
+#workskin .tcblood,
+#workskin .kurlozblood,
+#workskin .grandhighbloodblood,
+#workskin .ghbblood,
+#workskin .goatdadblood {
+	color: #440a7f;
+}
+
+/* Ampora blood */
+#workskin .amporablood,
+#workskin .eridanblood,
+#workskin .eriblood,
+#workskin .caligulasaquariumblood,
+#workskin .cablood,
+#workskin .cronusblood,
+#workskin .orphanerblood,
+#workskin .dualscarblood,
+#workskin .seahorsedadblood,
+#workskin .seahorse-dadblood,
+#workskin .skyhorsedadblood,
+#workskin .skyhorse-dadblood {
+	color: #6a006a;
+}
+
+/* Peixes blood */
+#workskin .peixesblood,
+#workskin .feferiblood,
+#workskin .fefblood,
+#workskin .ffblood,
+#workskin .cuttlefishcullerblood,
+#workskin .ccblood,
+#workskin .meenahblood,
+#workskin .herimperiouscondescensionblood,
+#workskin .hicblood,
+#workskin .condesceblood,
+#workskin .condyblood,
+#workskin .batterwitchblood,
+#workskin .gl’bgolybblood,
+#workskin .glbgolybblood {
+	color: #99004d;
+}
+
+/* Sign colors */
+
+/* Megido sign */
+#workskin .megidosign,
+#workskin .aradiasign,
+#workskin .arasign,
+#workskin .apocalypsearisensign,
+#workskin .aasign,
+#workskin .damarasign,
+#workskin .handmaidsign,
+#workskin .kangarammomsign,
+#workskin .kangaram-momsign,
+#workskin .rammomsign,
+#workskin .ram-momsign {
+	color: #a60100;
+}
+
+/* Nitram sign */
+#workskin .nitramsign,
+#workskin .tavrossign,
+#workskin .tavsign,
+#workskin .adiostoreadorsign,
+#workskin .atsign,
+#workskin .rufiohsign,
+#workskin .summonersign,
+#workskin .tinkerbullsign {
+	color: #a25203;
+}
+
+/* Captor sign */
+#workskin .captorsign,
+#workskin .solluxsign,
+#workskin .solsign,
+#workskin .twinarmageddonssign,
+#workskin .tasign,
+#workskin .mitunasign,
+#workskin .psiioniicsign,
+#workskin .psisign,
+#workskin .psiisign,
+#workskin .helmsmansign,
+#workskin .biclopssign,
+#workskin .biclopsdadsign,
+#workskin .biclops-dadsign,
+#workskin .bicyclopssign,
+#workskin .bicyclopsdadsign,
+#workskin .bicyclops-dadsign {
+	color: #a1a100;
+}
+
+/* Gray Vantas sign */
+#workskin .vantasbsign,
+#workskin .karkatsign,
+#workskin .karsign,
+#workskin .kksign,
+#workskin .carcinogeneticistsign,
+#workskin .cgsign {
+	color: #6c6c6c;
+}
+
+/* Red Vantas sign */
+#workskin .vantasasign,
+#workskin .altkarkatsign,
+#workskin .altkarsign,
+#workskin .altkksign,
+#workskin .altcarcinogeneticistsign,
+#workskin .altcgsign,
+#workskin .kankrisign,
+#workskin .signlesssign,
+#workskin .sufferersign {
+	color: #ff0000;
+}
+
+/* Leijon sign */
+#workskin .leijonsign,
+#workskin .nepetasign,
+#workskin .nepsign,
+#workskin .arseniccatnipsign,
+#workskin .acsign,
+#workskin .meulinsign,
+#workskin .disciplesign,
+#workskin .pouncesign,
+#workskin .pouncedeleonsign,
+#workskin .pounce-de-leonsign {
+	color: #416600;
+}
+
+/* Maryam sign */
+#workskin .maryamsign,
+#workskin .kanayasign,
+#workskin .kansign,
+#workskin .grimauxiliatrixsign,
+#workskin .gasign,
+#workskin .porrimsign,
+#workskin .dolorosasign,
+#workskin .mothergrubsign,
+#workskin .mother-grubsign,
+#workskin .virginmothergrubsign,
+#workskin .virgin-mother-grubsign {
+	color: #078446;
+}
+
+/* Pyrope sign */
+#workskin .pyropesign,
+#workskin .terezisign,
+#workskin .tezsign,
+#workskin .tzsign,
+#workskin .gallowscalibratorsign,
+#workskin .gcsign,
+#workskin .latulasign,
+#workskin .neophytesign,
+#workskin .redglaresign,
+#workskin .dragonsign,
+#workskin .pyralspitesign {
+	color: #008282;
+}
+
+/* Serket sign */
+#workskin .serketsign,
+#workskin .vriskasign,
+#workskin .vrissign,
+#workskin .arachnidsgripsign,
+#workskin .agsign,
+#workskin .araneasign,
+#workskin .marquisesign,
+#workskin .spinneretsign,
+#workskin .mindfangsign,
+#workskin .spidersign,
+#workskin .spidermomsign,
+#workskin .spider-momsign {
+	color: #004083;
+}
+
+/* Zahhak sign */
+#workskin .zahhaksign,
+#workskin .equiussign,
+#workskin .centaurstesticlesign,
+#workskin .ctsign,
+#workskin .horusssign,
+#workskin .executorsign,
+#workskin .expatri8sign,
+#workskin .darkleersign,
+#workskin .aurthoursign,
+#workskin .altaradiasign {
+	color: #0021cb;
+}
+
+/* Makara sign */
+#workskin .makarasign,
+#workskin .gamzeesign,
+#workskin .gamsign,
+#workskin .terminallycapricioussign,
+#workskin .tcsign,
+#workskin .kurlozsign,
+#workskin .grandhighsignsign,
+#workskin .ghbsign,
+#workskin .goatdadsign {
+	color: #440a7f;
+}
+
+/* Ampora sign */
+#workskin .amporasign,
+#workskin .eridansign,
+#workskin .erisign,
+#workskin .caligulasaquariumsign,
+#workskin .casign,
+#workskin .cronussign,
+#workskin .orphanersign,
+#workskin .dualscarsign,
+#workskin .seahorsedadsign,
+#workskin .seahorse-dadsign,
+#workskin .skyhorsedadsign,
+#workskin .skyhorse-dadsign {
+	color: #6a006a;
+}
+
+/* Peixes sign */
+#workskin .peixessign,
+#workskin .feferisign,
+#workskin .fefsign,
+#workskin .ffsign,
+#workskin .cuttlefishcullersign,
+#workskin .ccsign,
+#workskin .meenahsign,
+#workskin .herimperiouscondescensionsign,
+#workskin .hicsign,
+#workskin .condescesign,
+#workskin .condysign,
+#workskin .batterwitchsign,
+#workskin .gl’bgolybsign,
+#workskin .glbgolybsign {
+	color: #99004d;
+}
+
+/* Troll body colors */
+
+#workskin .hornbottom,
+#workskin .hornbase,
+#workskin .horn1 {
+	color: #ff4200;
+}
+
+#workskin .hornmiddle,
+#workskin .hornmid,
+#workskin .horn2 {
+	color: #ff9000;
+}
+
+#workskin .horntop,
+#workskin .horntip,
+#workskin .horn3 {
+	color: #ffba29;
+}
+
+#workskin .trollskin {
+	color: #c4c4c4;
+}
