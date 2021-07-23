@@ -764,7 +764,7 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 	- Denizens (colors picked from known denizens' browser logos, and hypothetical
 				colors/names added for unknown denizens)
 	- Incipisphere planets and other bodies
-	- Special colors
+	- Miscellaneous special colors
 	- Blood and sign colors (sometimes different from typing colors)
 	- Troll horn and skin colors
 */
@@ -935,7 +935,7 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 	background-color: #000000;
 }
 
-/* Special colors */
+/* Miscellaneous special colors */
 
 /* Blue ~ATH text */
 #workskin .athblue {
