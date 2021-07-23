@@ -544,3 +544,215 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 #workskin .lordenglish {
 	color: #2ed73a;
 }
+
+/* Exiles and Carapacians */
+#workskin .exile,
+/* Wayward Vagabond / The Mayor */
+#workskin .warwearyvillein,
+#workskin .wizardlyvassal,
+#workskin .waywardvagabond,
+#workskin .wastelandicvindicator,
+#workskin .wv,
+#workskin .mayor,
+#workskin .themayor,
+/* Peregrine Mendicant */
+#workskin .parcelmistress,
+#workskin .peregrinemendicant,
+#workskin .prospitianmonarch,
+#workskin .pm,
+/* Aimless Renegade */
+#workskin .authorityregulator,
+#workskin .aimlessrenegade,
+#workskin .armamentsregent,
+#workskin .ar,
+/* The White King and White Queen */
+#workskin .whiteking,
+#workskin .writkeeper,
+#workskin .wk,
+#workskin .whitequeen,
+#workskin .windsweptquestant,
+#workskin .wq,
+/* Jack Noir / Spades Slick */
+#workskin .jacknoir,
+#workskin .jack,
+#workskin .noir,
+#workskin .spadesslick,
+#workskin .spades,
+#workskin .slick,
+#workskin .ss,
+/* Diamonds Droog */
+#workskin .draconiandignitary,
+#workskin .diamondsdroog,
+#workskin .diamonds,
+#workskin .droog,
+#workskin .dd,
+/* Hearts Boxcars */
+#workskin .hegemonicbrute,
+#workskin .heartsboxcars,
+#workskin .hearts,
+#workskin .boxcars,
+#workskin .hb,
+/* Clubs Deuce */
+#workskin .courtyarddroll,
+#workskin .clubsdeuce,
+#workskin .clubs,
+#workskin .deuce,
+#workskin .cd {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+/* The Black Queen / Snowman */
+#workskin .blackqueen,
+#workskin .bq,
+#workskin .snowman,
+#workskin .felt8 {
+	color: #6c7073;
+	background-color: #000000;
+}
+
+/* John's and Jane's Dad */
+#workskin .dad,
+#workskin .johnsdad,
+#workskin .janesdad,
+#workskin .pipefan413 {
+	color: #4b4b4b;
+}
+
+/* John's Nanna */
+#workskin .nanna,
+#workskin .johnsnanna,
+#workskin .janelle { /* custom */
+	color: #09d8bb;
+}
+
+/* Jane's Poppop */
+#workskin .poppop,
+#workskin .janespoppop,
+#workskin .jonathan { /* custom */
+	color: #0085ff;
+}
+
+/* Rose's Mom */
+#workskin .rosesmom,
+#workskin .roxanne { /* custom */
+	color: #fc00a4;
+}
+
+/* Roxy's Mom */
+#workskin .roxysmom,
+#workskin .rosalyn,
+#workskin .roz { /* custom */
+	color: #7f009e;
+}
+
+/* Dave's Bro */
+#workskin .davesbro,
+#workskin .derrick,
+#workskin .bro { /* custom */
+	color: #deab14;
+}
+
+/* Dirk's Bro */
+#workskin .dirksbro,
+#workskin .devin,
+#workskin .dev { /* custom */
+	color: #a30101;
+}
+
+/* Jade's Grandpa */
+#workskin .grandpa,
+#workskin .jadesgrandpa,
+#workskin .joshua { /* custom */
+	color: #006201;
+}
+
+/* Jake's Grandma */
+#workskin .grandma,
+#workskin .jakesgrandma,
+#workskin .jadene { /* custom */
+	color: #659829;
+}
+
+/* Doc Scratch's standard pure white text */
+#workskin .docscratch,
+#workskin .scratch-white {
+	color: #ffffff;
+}
+
+/** Doc Scratch's white text on a green background,
+	as in the Intermission. For use outside .scratch.block */
+#workskin .scratch-green,
+#workskin .scratchgreen,
+#workskin .intermission {
+	color: #ffffff;
+	background-color: #0e4603;
+}
+
+/* The off-white letter O in Doc Scratch's name */
+#workskin .scratcho,
+#workskin .docscratcho {
+	color: #e0e0e0;
+}
+
+/* Felt members Itchy and Stitch */
+#workskin .itchy,
+#workskin .felt1,
+#workskin .stitch,
+#workskin .felt9 {
+	color: #ffea00;
+}
+
+/* Felt members Doze and Sawbuck */
+#workskin .doze,
+#workskin .felt2,
+#workskin .sawbuck,
+#workskin .felt10 {
+	color: #4040fd;
+}
+
+/* Felt members Trace and Matchsticks */
+#workskin .trace,
+#workskin .felt3,
+#workskin .matchsticks,
+#workskin .felt11 {
+	color: #df0000;
+}
+
+/* Felt members Clover and Eggs */
+#workskin .clover,
+#workskin .felt4,
+#workskin .eggs,
+#workskin .felt12 {
+	color: #a357ff;
+}
+
+/* Felt members Fin and Biscuits */
+#workskin .fin,
+#workskin .felt5,
+#workskin .biscuits,
+#workskin .felt13 {
+	color: #ff6000;
+}
+
+/* Felt members Die and Quarters */
+#workskin .die,
+#workskin .felt6,
+#workskin .quarters,
+#workskin .felt14 {
+	color: #008140;
+}
+
+/* Felt members Crowbar and Cans */
+#workskin .crowbar,
+#workskin .felt7,
+#workskin .cans,
+#workskin .felt15 {
+	color: #950015;
+}
+
+/* The letter O in Felt member Snowman's name */
+#workskin .snowmano,
+#workskin .felt8o {
+	color: #000000;
+}
