@@ -756,3 +756,188 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 #workskin .felt8o {
 	color: #000000;
 }
+
+/** SPECIAL COLORS
+	This is a collection of non-character text colors, added partly for reference and partly for cases where you need these for highlighting special words. The majority of the colors here have both colored text and backgrounds.
+	This list contains:
+	- Aspects
+	- Denizens (colors picked from known denizens' browser logos, and hypothetical
+				colors/names added for unknown denizens)
+	- Incipisphere planets and other bodies
+	- Special colors
+	- Blood and sign colors (sometimes different from typing colors)
+	- Troll horn and skin colors
+*/
+
+/* Aspects */
+
+#workskin .time { /* from logo and pants, 4331 */
+	color: #fc0c02;
+	background-color: #8e1414;
+}
+
+#workskin .space { /* from logo and shirt, 4297 */
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#workskin .void { /* from extended zodiac */
+	color: #001957;
+	background-color: #104ea2;
+}
+
+#workskin .light { /* from logo and pants, 3296 */
+	color: #fff743;
+	background-color: #e76700;
+}
+
+#workskin .mind { /* from extended zodiac */
+	color: #06ffc9;
+	background-color: #00923d;
+}
+
+#workskin .heart { /* from logo and shorts, 5858 */
+	color: #bd1864;
+	background-color: #55142a;
+}
+
+#workskin .rage { /* from logo and shirt, 4828 */
+	color: #9c4dad;
+	background-color: #391e71;
+}
+
+#workskin .hope { /* From logo and hood, 5858 */
+	color: #fdfdfd;
+	background-color: #ffc331;
+}
+
+#workskin .doom { /* from extended zodiac */
+	color: #000000;
+	background-color: #306800;
+}
+
+#workskin .life { /* From logo and hood, 5858 */
+	color: #76c34e;
+	background-color: #605542;
+}
+
+#workskin .blood { /* from extended zodiac */
+	color: #ba1016;
+	background-color: #3e1601;
+}
+
+#workskin .breath { /* from logo and pant outline, 4297 */
+	color: #10e0ff;
+	background-color: #0063d0;
+}
+
+/* Denizens */
+
+#workskin .hephaestus,
+#workskin .dtime {
+	color: #e00707;
+	background-color: #000000;
+}
+
+#workskin .echidna,
+#workskin .dspace {
+	color: #ffffff;
+	background-color: #1501b0;
+}
+
+#workskin .nix,
+#workskin .dvoid {
+	color: #ffffff;
+	background-color: #8900fe;
+}
+
+#workskin .cetus,
+#workskin .dlight {
+	color: #ffffff;
+	background-color: #bb66ff;
+}
+
+#workskin .metis,
+#workskin .dmind { /* custom */
+	color: #f6ce00;
+	background-color: #2a8539;
+}
+
+#workskin .psyche,
+#workskin .dheart { /* custom */
+	color: #ffffff;
+	background-color: #bd1864;
+}
+
+#workskin .pallas,
+#workskin .drage { /* custom */
+	color: #ffffff;
+	background-color: #994bb3;
+}
+
+#workskin .abraxas,
+#workskin .dhope {
+	color: #29ff01;
+	background-color: #136501;
+}
+
+#workskin .moros,
+#workskin .ddoom { /* custom */
+	color: #ffffff;
+	background-color: #204020;
+}
+
+#workskin .hemera,
+#workskin .dlife {
+	color: #ffffff;
+	background-color: #fcaf01;
+}
+
+#workskin .eusebia,
+#workskin .dblood { /* custom */
+	color: #ffffff;
+	background-color: #ba1016;
+}
+
+#workskin .typheus,
+#workskin .dbreath {
+	color: #ffffff;
+	background-color: #00ff01;
+}
+
+#workskin .yaldabaoth,
+#workskin .denizenlord {
+	color: #d71e0b;
+	background-color: #fea807;
+}
+
+/* Incipisphere bodies */
+
+#workskin .prospit { /* from extended zodiac */
+	color: #ffff00;
+	background-color: #e49700;
+}
+
+#workskin .derse { /* from extended zodiac */
+	color: #ff01fe;
+	background-color: #9700e4;
+}
+
+#workskin .skaia {
+	color: #ffffff;
+	background-color: #21afff;
+}
+
+#workskin .horrorterror,
+#workskin .horrorterrors,
+#workskin .noblecircle {
+	color: #8915b9;
+	background-color: #000000;
+}
+
+/* Special colors */
+
+/* Blue ~ATH text */
+#workskin .athblue {
+	color: #0000ff;
+}
