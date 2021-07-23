@@ -1428,3 +1428,19 @@
 #workskin .ichum tr:hover {
 	background-color: #2222;
 }
+
+/**	CUSTOM TEXT COLORS
+	The sample class below is for the user "unpredictableArtist", or UA.
+	You can change the class names (after the dot) as you like.
+	The "color" value changes the text color.
+	To make additional custom user classes, simply copy the entire four lines below
+	(from the first "#workskin" to the closing curly bracket "}") and paste,
+	then change the names and color once again.
+
+	Be sure to update your work skin before applying it to your works!
+*/
+
+#workskin .unpredictableartist,
+#workskin .ua {
+	color: #c6347c;
+}
