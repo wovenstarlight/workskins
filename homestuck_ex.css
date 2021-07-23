@@ -249,3 +249,298 @@ See the HTML linked for an example of a pesterlog (under "PESTERLOG SAMPLE").
 #workskin .jasprosename {
 	color: #f141ef;
 }
+
+#workskin .megido,
+/* Aradia Megido */
+#workskin .aradia,
+#workskin .ara,
+#workskin .apocalypsearisen,
+#workskin .aa,
+#workskin .aradiabot,
+/* Damara Megido and the Handmaid */
+#workskin .damara,
+#workskin .handmaid,
+#workskin .aradiasprite,
+/* The Megido lusus */
+#workskin .kangarammom,
+#workskin .kangaram-mom,
+#workskin .rammom,
+#workskin .ram-mom {
+	color: #a10000;
+}
+
+#workskin .nitram,
+/* Tavros Nitram */
+#workskin .tavros,
+#workskin .tav,
+#workskin .adiostoreador,
+#workskin .at,
+/* Rufioh Nitram and the Summoner */
+#workskin .rufioh,
+#workskin .summoner,
+/* The Nitram lusus */
+#workskin .tinkersprite,
+#workskin .tinkerbull {
+	color: #a15000;
+}
+
+#workskin .captor,
+/* Sollux Captor */
+#workskin .sollux,
+#workskin .sol,
+#workskin .twinarmageddons,
+#workskin .ta,
+/* Mituna Captor and the Ψiioniic/Psionic/Helmsman */
+#workskin .mituna,
+#workskin .psiioniic,
+#workskin .psi,
+#workskin .psii,
+#workskin .helmsman,
+/* The Captor lusus */
+#workskin .biclopsprite,
+#workskin .bicyclopsprite,
+#workskin .biclops,
+#workskin .biclopsdad,
+#workskin .biclops-dad,
+#workskin .bicyclops,
+#workskin .bicyclopsdad,
+#workskin .bicyclops-dad {
+	color: #a1a100;
+}
+
+/* GRAY Vantas text */
+#workskin .vantasb,
+/* Karkat Vantas */
+#workskin .karkat,
+#workskin .kar,
+#workskin .kk,
+#workskin .carcinogeneticist,
+#workskin .cg,
+/* The Vantas lusus */
+#workskin .crabsprite,
+#workskin .crabdad {
+	color: #626262;
+}
+
+/* RED Vantas text */
+#workskin .vantasa,
+/* Karkat's alternate text */
+#workskin .altkarkat,
+#workskin .altkar,
+#workskin .altkk,
+#workskin .altcarcinogeneticist,
+#workskin .altcg,
+/* Kankri Vantas and the Signless/Sufferer */
+#workskin .kankri,
+#workskin .signless,
+#workskin .sufferer,
+/* Red ~ATH text */
+#workskin .athred {
+	color: #ff0000;
+}
+
+#workskin .leijon,
+/* Nepeta Leijon */
+#workskin .nepeta,
+#workskin .nep,
+#workskin .arseniccatnip,
+#workskin .ac,
+/* Meulin Leijon and the Disciple */
+#workskin .meulin,
+#workskin .disciple,
+/* The Leijon lusus */
+#workskin .pouncesprite,
+#workskin .pounce,
+#workskin .pouncedeleon,
+#workskin .pounce-de-leon {
+	color: #416600;
+}
+
+#workskin .maryam,
+/* Kanaya Maryam */
+#workskin .kanaya,
+#workskin .kan,
+#workskin .grimauxiliatrix,
+#workskin .ga,
+/* Porrim Maryam and the Dolorosa */
+#workskin .porrim,
+#workskin .dolorosa,
+/* The Maryam lusus */
+#workskin .mothersprite,
+#workskin .mothergrub,
+#workskin .mother-grub,
+#workskin .virginmothergrub,
+#workskin .virgin-mother-grub {
+	color: #008141;
+}
+
+#workskin .pyrope,
+/* Terezi Pyrope */
+#workskin .terezi,
+#workskin .tez,
+#workskin .tz,
+#workskin .gallowscalibrator,
+#workskin .gc,
+/* Latula Pyrope and Neophyte Redglare */
+#workskin .latula,
+#workskin .neophyte,
+#workskin .redglare,
+/* The Pyrope lusus */
+#workskin .dragonsprite,
+#workskin .dragon,
+#workskin .pyralspite {
+	color: #008282;
+}
+
+#workskin .serket,
+/* Vriska Serket */
+#workskin .vriska,
+#workskin .vris,
+#workskin .arachnidsgrip,
+#workskin .ag,
+/* Aranea Serket and Marquise Spinneret Mindfang */
+#workskin .aranea,
+#workskin .marquise,
+#workskin .spinneret,
+#workskin .mindfang,
+/* The Serket lusus */
+#workskin .spidersprite,
+#workskin .spider,
+#workskin .spidermom,
+#workskin .spider-mom {
+	color: #005682;
+}
+
+#workskin .zahhak,
+/* Equius Zahhak */
+#workskin .equius,
+#workskin .centaurstesticle,
+#workskin .ct,
+/* Horuss Zahhak and E%ecutor/Executor Darkleer/the E%patria8/Expatriate */
+#workskin .horuss,
+#workskin .executor,
+#workskin .expatri8,
+#workskin .darkleer,
+/* The Zahhak lusus */
+#workskin .aurthoursprite,
+#workskin .aurthour,
+/* Alternate Aradia's text */
+#workskin .altaradia {
+	color: #000056;
+}
+
+#workskin .makara,
+/* Gamzee Makara */
+#workskin .gamzee,
+#workskin .gam,
+#workskin .terminallycapricious,
+#workskin .tc,
+/* Kurloz Makara and the Grand Highblood */
+#workskin .kurloz,
+#workskin .grandhighblood,
+#workskin .ghb,
+/* The Makara lusus */
+#workskin .goatsprite,
+#workskin .goatdad {
+	color: #2b0057;
+}
+
+/* The Makaras' chucklevoodoos */
+#workskin .altgamzee,
+#workskin .altgam,
+#workskin .altgm,
+#workskin .altgz,
+#workskin .altterminallycapricious,
+#workskin .alttc,
+#workskin .altkurloz,
+#workskin .altgrandhighblood,
+#workskin .altghb,
+#workskin .altmakara,
+#workskin .chucklevoodoo,
+#workskin .chucklevoodoos {
+	color: #5716ad;
+}
+
+#workskin .ampora,
+/* Eridan Ampora */
+#workskin .eridan,
+#workskin .eri,
+#workskin .caligulasaquarium,
+#workskin .ca,
+/* Cronus Ampora and Orphaner Dualscar */
+#workskin .cronus,
+#workskin .orphaner,
+#workskin .dualscar,
+/* The Ampora lusus */
+#workskin .seahorsesprite,
+#workskin .skyhorsesprite,
+#workskin .seahorsedad,
+#workskin .seahorse-dad,
+#workskin .skyhorsedad,
+#workskin .skyhorse-dad {
+	color: #6a006a;
+}
+
+#workskin .peixes,
+/* Feferi Peixes */
+#workskin .feferi,
+#workskin .fef,
+#workskin .ff,
+#workskin .cuttlefishculler,
+#workskin .cc,
+/* Meenah Peixes and Her Imperious Condescension */
+#workskin .meenah,
+#workskin .herimperiouscondescension,
+#workskin .hic,
+#workskin .condesce,
+#workskin .condy,
+#workskin .batterwitch,
+/* The Peixes lusus */
+#workskin .gl’bgolybsprite,
+#workskin .glbgolybsprite,
+#workskin .gl’bgolyb,
+#workskin .glbgolyb {
+	color: #77003c;
+}
+
+/* Calliope the cherub */
+#workskin .calliope,
+#workskin .callie,
+#workskin .uug,
+#workskin .uranianumbra {
+	color: #929292;
+}
+
+/* Caliborn the cherub */
+#workskin .caliborn,
+#workskin .uur,
+#workskin .undyingumbrage {
+	color: #323232;
+}
+
+/* Alternate Calliope */
+#workskin .altcalliope,
+#workskin .altcallie,
+#workskin .altuug,
+/* Caliborn's blood color */
+#workskin .calibornblood,
+#workskin .uurblood,
+#workskin .undyingumbrageblood {
+	color: #ff0000;
+}
+
+/* Alternate Caliborn */
+#workskin .altcaliborn,
+#workskin .altuur,
+/* Calliope's blood color */
+#workskin .calliopeblood,
+#workskin .callieblood,
+#workskin .uugblood,
+#workskin .uranianumbrablood
+/* General text color for the Felt and Lord English
+	Also used for writing Doc Scratch's name */
+#workskin .thefelt,
+#workskin .felt,
+#workskin .lordenglish {
+	color: #2ed73a;
+}
