@@ -45,3 +45,28 @@
 #workskin .mha {
 	color: #d70000;
 }
+
+#workskin .system.block {
+	background: #002f4d;
+	color: #eaeaea;
+	border-color: #c9ffff;
+}
+
+#workskin .waterdroplet,
+#workskin .wd {
+	color: #43d0f1;
+}
+
+#workskin .newcomer,
+#workskin .nc {
+	color: #d7d3cd;
+}
+
+#workskin .newcomer2,
+#workskin .nc2 {
+	color: #7e7668;
+}
+
+#workskin .tree {
+	color: #02d22c;
+}
