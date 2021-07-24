@@ -106,7 +106,7 @@ body.reversi {
 body.reversi #preview a { color: #5998d6; }
 
 body.reversi #skintoggle {
-	background: url(https://archiveofourown.org/images/skins/textures/tiles/black-noise.jpg);
+	background: #454545 url(https://archiveofourown.org/images/skins/textures/tiles/black-noise.jpg);
 	color: #fff;
 }
 body.reversi #skintoggle a.selected,
