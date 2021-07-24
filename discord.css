@@ -1,11 +1,12 @@
 /* The overall discord module */
 #workskin .discord {
   max-width: 710px;
-  margin: auto;
+  margin: 2em auto;
   padding-bottom: 1.286em;
   font-family: "Whitney", Helvetica Neue, "Lucida Grande", "Lucida Sans Unicode", "GNU Unifont", Verdana, Helvetica, Arial, sans-serif;
   border-radius: 8px;
   position: relative;
+  box-shadow: 0 0 8px #aaaa;
 }
 
 /* Background colors for dark and light mode */
