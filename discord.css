@@ -156,6 +156,56 @@
   font-size: 75%;
 }
 
+/* The edited message notice */
+#workskin .discord .edited {
+  font-size: 0.625rem;
+  user-select: none; /* For all others */
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For IE */
+}
+#workskin .darkmode .edited {
+  color: #72767d;
+}
+#workskin .lightmode .edited {
+  color: #747f8d;
+}
+
+/* New date divider */
+#workskin .discord .dateline {
+  margin: 1.5rem 1rem 0;  
+  border-top: thin solid;
+}
+
+#workskin .discord .dateline p {
+  padding: 2px 4px;
+  font-size: 12px;
+  margin: -1em auto -.75em;
+  font-weight: 600;
+  width: fit-content;
+}
+#workskin .discord .dateline p {
+  width: -webkit-fit-content;
+}
+#workskin .discord .dateline p {
+  width: -moz-fit-content;
+}
+
+#workskin .darkmode .dateline {
+  border-top-color: #ffffff0f;
+}
+#workskin .darkmode .dateline p {
+  color: #72767d;
+  background: #36393f;
+}
+
+#workskin .lightmode .dateline {
+  border-top-color: #06060714;
+}
+#workskin .lightmode .dateline p {
+  color: #747f8d;
+  background: #fff;
+}
+
 /* Alignment and colors for typing bar */
 #workskin .discord > div:last-child {
   margin: 0 2.5%;
