@@ -4,8 +4,9 @@ This is a collection of my Archive Of Our Own work skins, along with samples. Yo
 ## Table of contents
 Currently, this repo contains the following workskins:
 - Extended Homestuck Work Skin (`homestuck_ex`)
-- A Homestuck colors skin for The S-Ranks That I Raised (`sranks_hs`)
+- Homestuck colors Work Skin for The S-Ranks That I Raised (`sranks_hs`)
 - Discord Work Skin with light and dark modes (`discord`)
+- System Windows Work Skin for The S-Ranks That I Raised (`sranks_system`)
 
 ## Files
 For each work skin, this repo has:
