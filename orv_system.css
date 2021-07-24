@@ -1,0 +1,136 @@
+/* The main window. Change the width of your windows by altering the "max-width" value below. */
+#workskin .userstuff > .blue {
+	margin: 2em auto;
+	max-width: 600px;
+}
+
+/* Angular borders, blue and white. */
+#workskin .blue {
+  background: -moz-linear-gradient(45deg, transparent 10px, #3abafd 10px), -moz-linear-gradient(315deg, transparent 20px, #3abafd 20px), -moz-linear-gradient(225deg, transparent 10px, #3abafd 10px), -moz-linear-gradient(135deg, transparent 20px, #3abafd 20px);
+}
+#workskin .blue {
+  background: -o-linear-gradient(45deg, transparent 10px, #3abafd 10px), -o-linear-gradient(315deg, transparent 20px, #3abafd 20px), -o-linear-gradient(225deg, transparent 10px, #3abafd 10px), -o-linear-gradient(135deg, transparent 20px, #3abafd 20px);
+}
+#workskin .blue {
+  background: -webkit-linear-gradient(45deg, transparent 10px, #3abafd 10px), -webkit-linear-gradient(315deg, transparent 20px, #3abafd 20px), -webkit-linear-gradient(225deg, transparent 10px, #3abafd 10px), -webkit-linear-gradient(135deg, transparent 20px, #3abafd 20px);
+}
+#workskin .blue {
+  background: linear-gradient(45deg, transparent 10px, #3abafd 10px), linear-gradient(315deg, transparent 20px, #3abafd 20px), linear-gradient(225deg, transparent 10px, #3abafd 10px), linear-gradient(135deg, transparent 20px, #3abafd 20px);
+}
+#workskin .white {
+  background: -moz-linear-gradient(45deg, transparent 10px, #f0fefe 10px), -moz-linear-gradient(315deg, transparent 20px, #f0fefe 20px), -moz-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -moz-linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+}
+#workskin .white {
+  background: -o-linear-gradient(45deg, transparent 10px, #f0fefe 10px), -o-linear-gradient(315deg, transparent 20px, #f0fefe 20px), -o-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -o-linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+}
+#workskin .white {
+  background: -webkit-linear-gradient(45deg, transparent 10px, #f0fefe 10px), -webkit-linear-gradient(315deg, transparent 20px, #f0fefe 20px), -webkit-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -webkit-linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+}
+#workskin .white {
+  background: linear-gradient(45deg, transparent 10px, #f0fefe 10px), linear-gradient(315deg, transparent 20px, #f0fefe 20px), linear-gradient(225deg, transparent 10px, #f0fefe 10px), linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+}
+
+/* General setup for the main window. */
+#workskin .windorv {
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 50% 50%;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 2px;
+  box-shadow: 0 0 20px 10px #4fffff11, 0 0 10px 20px #4fffff11 inset;
+  border-radius: 15px;
+}
+/* Accounting for AO3's additional <p> tags. */
+#workskin .windorv p {
+  margin: 0;
+  padding: 0 !important;
+}
+
+/* Styling for the text within the window. */
+#workskin .lastwin {
+  padding: 10px 5px;
+  color: #f0fefe;
+  font-family: Trebuchet MS, sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #052160;
+  font-weight: bold;
+}
+
+/* The minimize, resize, and close buttons on the window. */
+.lastwin::before {
+  content: "— ❐ ✖";
+  float: right;
+  padding: 2px 15px 0 0;
+  font-size: 1.2em;
+}
+
+/* Aligning the paragraphs within the window. */
+#workskin .lastwin p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: fit-content;
+}
+#workskin .lastwin p {
+  width: -webkit-fit-content;
+}
+#workskin .lastwin p {
+  width: -moz-fit-content;
+}
+
+/* Scenario window navigation bar, angular and underlying borders. */
+#workskin .outer {
+  padding: 1px;
+  box-shadow: 0px 10px 0px 0px #3abafd, 0px 16px 0px -1px #f0fefe;
+  margin-bottom: 25px;
+  margin-top: -5px;
+  background: linear-gradient(225deg, transparent 10px, #f0fefe 10px), linear-gradient(315deg, transparent 20px, #f0fefe 20px);
+}
+#workskin .outer {
+  background: -moz-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -moz-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
+}
+#workskin .outer {
+  background: -o-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -o-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
+}
+#workskin .outer {
+  background: -webkit-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -webkit-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
+}
+
+/* More navbar angular borders and navbar text styling. */
+#workskin .inner {
+  padding: 4px;
+  font-size: 1.2em;
+  text-align: center;
+  background: linear-gradient(225deg, transparent 10px, #5cebfc 10px), linear-gradient(315deg, transparent 20px, #5cebfc 20px);
+}
+#workskin .inner {
+  background: -moz-linear-gradient(225deg, transparent 10px, #5cebfc 10px), -moz-linear-gradient(315deg, transparent 20px, #5cebfc 20px);
+}
+#workskin .inner {
+  background: -o-linear-gradient(225deg, transparent 10px, #5cebfc 10px), -o-linear-gradient(315deg, transparent 20px, #5cebfc 20px);
+}
+#workskin .inner {
+  background: -webkit-linear-gradient(225deg, transparent 10px, #5cebfc 10px), -webkit-linear-gradient(315deg, transparent 20px, #5cebfc 20px);
+}
+
+/* Navbar styling. */
+#workskin .scenario {
+  background-position: top right, top left;
+  -moz-background-size: 50% 100%;
+  -webkit-background-size: 50% 100%;
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Styling for the headings, like scenario name and clear conditions. */
+#workskin .header {
+  font-size: 1.4em;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Styling for all other text in the scenario window. */
+#workskin .lastwin p:not(.header) {
+  text-align: left;
+}
