@@ -1,0 +1,305 @@
+/* The overall discord module */
+#workskin .discord {
+  max-width: 710px;
+  margin: auto;
+  padding-bottom: 1.286em;
+  font-family: "Whitney", Helvetica Neue, "Lucida Grande", "Lucida Sans Unicode", "GNU Unifont", Verdana, Helvetica, Arial, sans-serif;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* Background colors for dark and light mode */
+#workskin .darkmode {
+  background: #36393f;
+  color: #dcddde;
+}
+
+#workskin .lightmode {
+  background: #fff;
+  color: #2e3338;
+}
+
+/* Aligning the text messages */
+#workskin .discord > div:not(.channel) {
+  padding-left: 16px;
+  padding-right: 4.5%;
+}
+
+/* Sizing the icons */
+#workskin .discord > div p > img:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+/* Aligning the individual text messages */
+#workskin .discord > .message > p:not(:first-child) {
+  margin-top: -4.4em;
+  margin-left: 56px;
+}
+
+/* Making usernames underline like links when hovered */
+#workskin .discord .name:hover {
+    text-decoration: underline;
+}
+
+/* Colors for dark and light mode; channel headers, default usernames, timestamps, typing bar placeholder */
+#workskin .darkmode .name,
+#workskin .darkmode .channel .channelname {
+  color: #fff;
+  font-weight: 600;
+}
+#workskin .lightmode .name,
+#workskin .lightmode .channel .channelname {
+  color: #060607;
+  font-weight: 600;
+}
+
+#workskin .darkmode .hash,
+#workskin .darkmode > div:last-child .placeholder,
+#workskin .darkmode .timestamp {
+  color: #72767d;
+}
+#workskin .lightmode .hash,
+#workskin .lightmode > div:last-child .placeholder,
+#workskin .lightmode .timestamp {
+  color: #747f8d;
+}
+
+/* Alignment and sizing of channel headers and their content */
+#workskin .discord .hash {
+  font-size: 24px;
+  font-weight: normal;
+  padding: 0 1.5%;
+  top: 3px;
+  position: relative;
+}
+
+#workskin .discord .channel {
+  padding: 4px 12px 8px;    
+}
+
+#workskin .discord .channel > p {
+  margin: -3px 0 3px;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#workskin .discord .channel .channelname {
+  font-size: 16px;
+}
+
+/* Shading for the channel header */
+#workskin .darkmode .channel {
+  box-shadow: #2c2f33bd 0 2px 1px;
+}
+
+#workskin .lightmode .channel {
+  box-shadow: #2c2f332e 0 2px 1px;
+}
+
+/* The three icons to the right of the channel header. Normal */
+#workskin .darkmode .channel > p:not(.newpins)::after {
+  background-image: url(https://i.imgur.com/2Jo3bI3.png);
+}
+#workskin .lightmode .channel > p:not(.newpins)::after {
+  background-image: url(https://i.imgur.com/L8KR3n0.png);
+}
+
+/* The three icons to the right of the channel header. When there are new pins */
+#workskin .darkmode .channel > p.newpins::after {
+  background-image: url(https://i.imgur.com/GClC6WS.png);
+}
+#workskin .lightmode .channel > p.newpins::after {
+  background-image: url(https://i.imgur.com/xtoAXUx.png);
+}
+
+#workskin .discord .channel > p::after {
+  height: 21px;
+  width: 101px;
+  background-size: 100px auto;
+  content: "";
+  background-repeat: no-repeat;
+  margin: 13px 10px 10px;
+  position: absolute;
+  right: 0.7em;
+}
+
+/* Colors and decoration for links and pings */
+#workskin .discord a {
+  border: none;
+}
+#workskin .discord a:hover {
+  text-decoration: underline;
+}
+#workskin .discord a.ping {
+  color: #7289da;
+}
+
+#workskin .darkmode a {
+  color: #00b0f4;
+}
+#workskin .lightmode a {
+  color: #0067e0;
+}
+
+/* Alignment and sizing of message timestamps */
+#workskin .discord .timestamp {
+  padding-left: 6px;
+  font-size: 75%;
+}
+
+/* Alignment and colors for typing bar */
+#workskin .discord > div:last-child {
+  margin: 0 2.5%;
+  padding: 11px;
+  border-radius: 8px;
+}
+
+#workskin .darkmode > div:last-child {
+  background: #40444b;
+}
+#workskin .lightmode > div:last-child {
+  background: #ebedef;
+}
+
+/* Aligning the message in the typing bar, and making it unselectable when placeholder displays */
+#workskin .discord > div:last-child > p {
+  margin: -1.5em 0 0 45px;
+  padding: 0;
+}
+
+#workskin .discord > div:last-child .placeholder {
+  user-select: none; /* For all others */
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For IE */
+}
+
+/* The upload files button in the typing bar */
+#workskin .discord > div:last-child > p.upload {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin: 0 0 0 8px;
+}
+#workskin .darkmode > div:last-child > p.upload {
+  background: #b9bbbe;
+}
+#workskin .lightmode > div:last-child > p.upload {
+  background: #4f5660;
+}
+
+#workskin .discord > div:last-child > p.upload::after {
+  content: '+';
+  font-size: 1.35em;
+  display: inline-block;
+  margin: -11px 0 0 4px;
+  font-weight: 600;
+}
+#workskin .darkmode > div:last-child > p.upload::after {
+  color: #40444b;
+}
+#workskin .lightmode > div:last-child > p.upload::after {
+  color: #ebedef;
+}
+
+/* For when creator style is turned off */
+#workskin .hide {
+  display: none;
+}
+
+/* Default discord role colors, light versions (upper row) */
+#workskin .discord .role1 {
+  color: #1abc9c !important;
+}
+
+#workskin .discord .role2 {
+  color: #2ecc71 !important;
+}
+
+#workskin .discord .role3 {
+  color: #3498db !important;
+}
+
+#workskin .discord .role4 {
+  color: #9b59b6 !important;
+}
+
+#workskin .discord .role5 {
+  color: #e91e63 !important;
+}
+
+#workskin .discord .role6 {
+  color: #f1c40f !important;
+}
+
+#workskin .discord .role7 {
+  color: #e67e22 !important;
+}
+
+#workskin .discord .role8 {
+  color: #e74c3c !important;
+}
+
+#workskin .discord .role9 {
+  color: #95a5a6 !important;
+}
+
+#workskin .discord .role10 {
+  color: #607d8b !important;
+}
+
+/* Default discord role colors, dark versions (lower row) */
+#workskin .discord .role1a {
+  color: #11906a !important;
+}
+
+#workskin .discord .role2a {
+  color: #1f8b4c !important;
+}
+
+#workskin .discord .role3a {
+  color: #206694 !important;
+}
+
+#workskin .discord .role4a {
+  color: #71368a !important;
+}
+
+#workskin .discord .role5a {
+  color: #ad1457 !important;
+}
+
+#workskin .discord .role6a {
+  color: #c27c0e !important;
+}
+
+#workskin .discord .role7a {
+  color: #a84300 !important;
+}
+
+#workskin .discord .role8a {
+  color: #992d22 !important;
+}
+
+#workskin .discord .role9a {
+  color: #979c9f !important;
+}
+
+#workskin .discord .role10a {
+  color: #546e7a !important;
+}
+
+/* CUSTOM ROLE GUIDE
+Edit the text YOUR_ROLE_HERE to another name.
+For example, a role named "support" would read as follows: #workskin .discord .support
+Make sure not to delete the dot before the role name! */
+#workskin .discord .YOUR_ROLE_HERE {
+  color: #ffffff !important;		  /* This color- #ffffff, the hex code for white- can be changed to whatever you'd like.
+  color: rgb(255,255,255) !important; <-- You can also do RGB colors, if you'd prefer!
+    								  Just replace the hex code in the line above with rgb(#,#,#) instead. 
+    								  Make sure not the delete the "!important" marker! */
+}
