@@ -73,82 +73,82 @@ hr {
 
 
 /* Default skin */
-body.default {
+.default {
 	background-color: #fff;
 	color: #2a2a2a;
 }
 
-body.default #preview a { color: #900; }
+.default #preview a { color: #900; }
 
-body.default #skintoggle {
+.default #skintoggle {
 	background: #900 url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png);
 	color: #fff;
 }
-body.default #skintoggle a.selected,
-body.default #skintoggle a:hover {
+.default #skintoggle a.selected,
+.default #skintoggle a:hover {
 	background: #ddd;
 	color: #111;
 }
 
-body.default #workskin a,
-body.default #workskin a:link,
-body.default #workskin a:visited:hover { color: #111; }
-body.default #workskin a:visited { color: #666; }
-body.default #workskin a:hover { color: #999; }
+.default #workskin a,
+.default #workskin a:link,
+.default #workskin a:visited:hover { color: #111; }
+.default #workskin a:visited { color: #666; }
+.default #workskin a:hover { color: #999; }
 
 
 /* Reversi skin */
-body.reversi {
+.reversi {
 	background-color: #333333;
 	color: #eee;
 }
 
-body.reversi #preview a { color: #5998d6; }
+.reversi #preview a { color: #5998d6; }
 
-body.reversi #skintoggle {
+.reversi #skintoggle {
 	background: #454545 url(https://archiveofourown.org/images/skins/textures/tiles/black-noise.jpg);
 	color: #fff;
 }
-body.reversi #skintoggle a.selected,
-body.reversi #skintoggle a:hover { background: #2a2a2a; }
+.reversi #skintoggle a.selected,
+.reversi #skintoggle a:hover { background: #2a2a2a; }
 
-body.reversi #workskin a,
-body.reversi #workskin a:link,
-body.reversi #workskin a:visited:hover { color: #fff; }
-body.reversi #workskin a:visited { color: #999; }
-body.reversi #workskin a:hover { color: #bbb; }
+.reversi #workskin a,
+.reversi #workskin a:link,
+.reversi #workskin a:visited:hover { color: #fff; }
+.reversi #workskin a:visited { color: #999; }
+.reversi #workskin a:hover { color: #bbb; }
 
 
 /* Low contrast skin */
-body.low-contrast {
+.low-contrast {
 	background-color: #a59c91;
 	color: #ccc;
 }
 
-body.low-contrast #preview { background: #423d36; }
-body.low-contrast #preview a {
+.low-contrast #preview { background: #423d36; }
+.low-contrast #preview a {
 	color: #c9b8c1;
 }
 
-body.low-contrast #skintoggle {
+.low-contrast #skintoggle {
 	background-color: #2b2823;
 	color: #ffffffbf;
 }
-body.low-contrast #skintoggle a.selected,
-body.low-contrast #skintoggle a:hover {
+.low-contrast #skintoggle a.selected,
+.low-contrast #skintoggle a:hover {
 	color: #c22;
 	background: #000c;
 }
 
-body.low-contrast main {
+.low-contrast main {
 	margin: .75em .5em 1.5em;
 	padding-bottom: 1%;
 	border: none;
 	background-color: #564b3f;
 }
 
-body.low-contrast #workskin a,
-body.low-contrast #workskin a:link,
-body.low-contrast #workskin a:visited:hover { color: #ccc; }
-body.low-contrast #workskin a:visited { color: #999; }
-body.low-contrast #workskin a:hover { color: #fff; }
+.low-contrast #workskin a,
+.low-contrast #workskin a:link,
+.low-contrast #workskin a:visited:hover { color: #ccc; }
+.low-contrast #workskin a:visited { color: #999; }
+.low-contrast #workskin a:hover { color: #fff; }
