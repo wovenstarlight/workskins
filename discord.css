@@ -48,6 +48,54 @@
     text-decoration: underline;
 }
 
+/* Alignment and color for system messages */
+#workskin .discord .system {
+  margin: 0 0 1em;
+}
+
+#workskin .darkmode .system {
+  color: #8e9297;
+}
+#workskin .lightmode .system {
+  color: #6a7480;
+}
+
+#workskin .discord .system p {
+  margin-top: -1.4em;
+  margin-left: 56px;
+}
+
+/* System message: Welcome */
+#workskin .discord .system.welcome::before {
+  content: '➜';
+  color: #43b581;
+  font-size: 1.4em;
+  top: 2.5px;
+  position: relative;
+  width: 40px;
+  text-align: center;
+  display: block;
+}
+
+/* System message: Pinned message */
+#workskin .discord .system.pin::before {
+  content: "";
+  height: 16px;
+  width: 40px;
+  display: block;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#workskin .darkmode .system.pin::before {
+  background-image: url(https://i.imgur.com/i5GVWY2.png);
+}
+
+#workskin .lightmode .system.pin::before {
+  background-image: url(https://i.imgur.com/wNgXtE5.png);
+}
+
 /* Colors for dark and light mode; channel headers, default usernames, timestamps, typing bar placeholder */
 #workskin .darkmode .name,
 #workskin .darkmode .channel .channelname {
@@ -96,6 +144,14 @@
   font-size: 16px;
 }
 
+#workskin .discord .channel .description {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 2%;
+  padding: 1% 0 1% 2%;
+  border-left: solid thin;
+}
+
 /* Shading for the channel header */
 #workskin .darkmode .channel {
   box-shadow: #2c2f33bd 0 2px 1px;
@@ -103,6 +159,21 @@
 
 #workskin .lightmode .channel {
   box-shadow: #2c2f332e 0 2px 1px;
+}
+
+/* Colors for the channel description and its border */
+#workskin .darkmode .channel > p {
+  color: #b9bbbe;
+}
+#workskin .lightmode .channel > p {
+  color: #4f5660;
+}
+
+#workskin .darkmode .channel .description {
+  border-left-color: #ffffff0f;
+}
+#workskin .lightmode .channel .description {
+  border-left-color: #06060714;
 }
 
 /* The three icons to the right of the channel header. Normal */
@@ -130,6 +201,58 @@
   margin: 13px 10px 10px;
   position: absolute;
   right: 0.7em;
+}
+
+/* Top-of-channel header: hash symbol */
+#workskin .discord .channeltop h1:first-child::before {
+  height: 68px;
+  width: 68px;
+  line-height: 1.3;
+  content: '#';
+  font-size: 1.5em;
+  border-radius: 100%;
+  display: block;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #fff;
+}
+#workskin .darkmode .channeltop h1::before {
+  background-color: #4f545c;
+}
+#workskin .lightmode .channeltop h1::before {
+  background-color: #747f8d;
+}
+
+/* Top-of-channel header: heading */
+#workskin .discord .channeltop h1 {
+  font-family: "Whitney", Helvetica Neue, "Lucida Grande", "Lucida Sans Unicode", "GNU Unifont", Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+#workskin .darkmode .channeltop h1 {
+  color: #ffffff;
+}
+#workskin .lightmode .channeltop h1 {
+  color: #060607;
+}
+
+/* Top-of-channel header: description */
+#workskin .discord .channeltop p {
+  padding-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  border-bottom: thin solid;
+}
+#workskin .darkmode .channeltop p {
+  border-bottom-color: #ffffff0f;
+  color: #b9bbbe;
+}
+#workskin .lightmode .channeltop p {
+  border-bottom-color: #06060714;
+  color: #4f5660;
 }
 
 /* Colors and decoration for links and pings */
