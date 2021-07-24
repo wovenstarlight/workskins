@@ -13,9 +13,11 @@ $("#skintoggle a.site").click( function() {
 $("#skintoggle .work").click( function() {
 	if ($(this).hasClass("active")) {
 		$("link[class='custom']").prop('disabled', true);
+		$(this).html("Enable work skin");
 	}
 	else {
 		$("link[class='custom']").prop('disabled', false);
+		$(this).html("Disable work skin");
 	}
 	$(this).toggleClass("active inactive");
 });
