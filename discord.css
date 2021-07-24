@@ -38,6 +38,11 @@
   margin-left: 56px;
 }
 
+/* Making large images in text messages display correctly */
+#workskin .discord > .message > p:not(:first-child) img.large {
+  width: 400px;
+}
+
 /* Making usernames underline like links when hovered */
 #workskin .discord .name:hover {
     text-decoration: underline;
