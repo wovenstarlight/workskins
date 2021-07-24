@@ -143,10 +143,18 @@
   color: #7289da;
 }
 
-#workskin .darkmode a {
+#workskin .darkmode a,
+#workskin .darkmode a:link,
+#workskin .darkmode a:visited,
+#workskin .darkmode a:hover,
+#workskin .darkmode a:visited:hover {
   color: #00b0f4;
 }
-#workskin .lightmode a {
+#workskin .lightmode a,
+#workskin .lightmode a:link,
+#workskin .lightmode a:visited,
+#workskin .lightmode a:hover,
+#workskin .lightmode a:visited:hover {
   color: #0067e0;
 }
 
