@@ -35,7 +35,7 @@
 }
 
 #workskin .noah {
-	color: #3c916d;
+	color: #5f8978;
 }
 
 #workskin .ymw {
@@ -61,20 +61,75 @@
 #workskin .nc {
 	color: #d7d3cd;
 }
-#workskin .newcomer2,
-#workskin .nc2 {
-	color: #7e7668;
-}
 
 #workskin .tree {
 	color: #02d22c;
 }
 
+#workskin .diarma {
+	color: #cf394d;
+}
+
+#workskin .jellyfish,
+#workskin .jf,
+#workskin .rukafeiya {
+	color: #c595fe;
+}
+
+#workskin .chatterbox,
+#workskin .cb {
+	color: #7887ff;
+}
+
+#workskin .whitebird,
+#workskin .wb,
+#workskin .birdwhocountsstars,
+#workskin .chirpie {
+	color: #ffc003;
+}
+
 #workskin .crescentmoon,
 #workskin .cm {
-	color: #a49e77;
+	color: #beb577;
 }
+
+#workskin .waterdroplet2,
+#workskin .wd2 {
+	color: #0096ba;
+}
+
+#workskin .newcomer2,
+#workskin .nc2 {
+	color: #8b8883;
+}
+
+#workskin .tree2 {
+	color: #008108;
+}
+
+#workskin .diarma2 {
+	color: #7d2430;
+}
+
+#workskin .jellyfish2,
+#workskin .jf2,
+#workskin .rukafeiya2 {
+	color: #6607f1;
+}
+
+#workskin .chatterbox2,
+#workskin .cb2 {
+	color: #2f45ff;
+}
+
+#workskin .whitebird2,
+#workskin .wb2,
+#workskin .birdwhocountsstars2,
+#workskin .chirpie2 {
+	color: #ff5400;
+}
+
 #workskin .crescentmoon2,
 #workskin .cm2 {
-	color: #817845;
+	color: #726938;
 }
