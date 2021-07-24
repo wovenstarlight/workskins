@@ -1,0 +1,133 @@
+/* All windows */
+#workskin .window {
+  background: #004b79cc; /* The background. Slightly transparent to mimic what a real window might look like. */
+  color: #eaeaea; /* The regular text color */
+  width: 80%;
+  margin: 1.5em auto;
+  border: 0.2em #c9ffff ridge;
+  box-shadow: 0 0 1em 0.4em #84eaeabf; /* The glow around the border. Make it a slightly different shade from the border to make it stand out */
+  max-width: 750px;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+#workskin .window p {
+  margin: 0;
+  text-shadow: 0px 1px 4px #250833bf;
+}
+
+/* Menu bar. If you don't want any title such as "Message Window", don't assign any class to the first <p> element, leaving it empty. */
+#workskin .window > p:first-child {
+  padding: 0.6em 1em;
+  border-bottom: 0.2em #c9ffff ridge;
+  margin: 0;
+  min-height: 23px;
+  font-variant: small-caps;
+  background: #002f4dcc;
+}
+#workskin .window > p:first-child {
+  background: linear-gradient(#054c6780 2%,#002f4dcc 50%,#00071680 90%);
+}
+
+/* Headings for the various types of windows */
+#workskin .announce::before {
+  content: "Announcement Window";
+}
+
+#workskin .message::before {
+  content: "Message Window";
+}
+
+#workskin .status::before {
+  content: "Status Window";
+}
+
+#workskin .reward::before {
+  content: "Reward Window";
+}
+
+#workskin .info::before {
+  content: "Information Window";
+}
+
+#workskin .inventory::before {
+  content: "Inventory";
+}
+
+#workskin .itemwin::before {
+  content: "Item Window";
+}
+
+/* The minimize/resize/close buttons in the menu bar */
+#workskin .window > p:first-child::after {
+  content: "—\00A0\00A0❐\00A0\00A0✖";
+  float: right;
+  cursor: pointer;
+}
+
+/* Aligning and centering the actual window content; this is the text that'll display in the main body */
+#workskin .windowcontent,
+#workskin .items {
+  text-align: center;
+  box-shadow: 0 7px 15px -3px inset #00225875;
+}
+
+#workskin .windowcontent {
+  padding: 1em;
+}
+
+/* For headings */
+#workskin .wintitle {
+  font-size: 110%;
+  font-weight: bold;
+  color: #88ffd8;
+}
+
+/* Styling the stats in the Status Window */
+#workskin .stat p {
+  display: inline-block;
+  min-width: 5em;
+  padding: 0.1em 3%;
+  background: rgba(255,255,255,0.2);
+  margin: 0.2em 0;
+}
+
+#workskin .stat p:nth-child(2n) {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* The individual items in the Inventory and Item Windows. Equivalent of .windowcontent */
+#workskin .items {
+  padding: 0.5em;
+}
+
+#workskin .items > p:not(:last-of-type) {
+  border-bottom: 0.2em #c9ffff ridge;
+}
+
+#workskin .items > p {
+  margin: 0;
+  padding: 0.4em;
+  transition: 0.3s;
+}
+
+#workskin .items > p:hover {
+  background: #2badb333; /* Background color when items are hovered over */
+  color: #88ffd8; /* Font color when items are hovered over */
+}
+
+/* The highlighting for skill ranks and item counts */
+#workskin .skillrank,
+#workskin .itemcount {
+  font-size: 80%;
+  font-style: italic;
+  color: #5ff; /* Font color- bright blue to stand out against the background and body text */
+}
+
+#workskin .itemcount {
+  padding: 0 0.3em;
+}
+
+/* For hiding elements that are needed when creator's style is disabled */
+#workskin .hide {
+  display: none;
+}
