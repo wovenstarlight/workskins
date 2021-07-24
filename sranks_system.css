@@ -57,6 +57,35 @@
   content: "Item Window";
 }
 
+/* "Glitched" versions of the window headers. Use if you want to fake a system error */
+#workskin .announce.glitch::before {
+  content: "An̴̺͛no̶̤͝unçemẹ̵͍́́nt Wĭn̷͖͐doш";
+}
+
+#workskin .message.glitch::before {
+  content: "Mešsâ̸̛̤g̵e Wind¤w";
+}
+
+#workskin .status.glitch::before {
+  content: "§tatu̴s Wi̵ndow̷͚͑";
+}
+
+#workskin .reward.glitch::before {
+  content: "R̸e̴warɗ Win̷d̶͈̥̎ow";
+}
+
+#workskin .info.glitch::before {
+  content: "Info̸͛r̸̝̋mat̵̤̆io̶n W̷i̴ndoຝ";
+}
+
+#workskin .inventory.glitch::before {
+  content: "I⊓ven̸t̷o̶ry";
+}
+
+#workskin .itemwin.glitch::before {
+  content: "Iτem̴̟̑͜ Winɗow";
+}
+
 /* The minimize/resize/close buttons in the menu bar */
 #workskin .window > p:first-child::after {
   content: "—\00A0\00A0❐\00A0\00A0✖";
