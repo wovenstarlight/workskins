@@ -134,8 +134,8 @@ Original image URL: https://discord.com/assets/5da4cdab01d4d89c593c48c62ae0d937.
 #workskin .discord .channel .description {
   font-size: 0.93em;
   font-weight: 500;
-  margin-left: 2%;
-  padding: 0 2%;
+  margin-left: 8.25px;
+  padding: 0 8.25px;
   border-left: solid thin;
   white-space: nowrap;
   overflow: hidden;
