@@ -15,7 +15,7 @@ main {
 	main { font-size: 1em; }
 }
 
-#workskin {
+main > section {
 	max-width: 72em;
 	margin: auto;
 }
@@ -96,11 +96,11 @@ hr {
 	color: #111;
 }
 
-.default #workskin a,
-.default #workskin a:link,
-.default #workskin a:visited:hover { color: #111; }
-.default #workskin a:visited { color: #666; }
-.default #workskin a:hover { color: #999; }
+.default main > section a,
+.default main > section a:link,
+.default main > section a:visited:hover { color: #111; }
+.default main > section a:visited { color: #666; }
+.default main > section a:hover { color: #999; }
 
 
 /* Reversi skin */
@@ -118,11 +118,11 @@ hr {
 .reversi #skintoggle a.selected,
 .reversi #skintoggle a:hover { background: #2a2a2a; }
 
-.reversi #workskin a,
-.reversi #workskin a:link,
-.reversi #workskin a:visited:hover { color: #fff; }
-.reversi #workskin a:visited { color: #999; }
-.reversi #workskin a:hover { color: #bbb; }
+.reversi main > section a,
+.reversi main > section a:link,
+.reversi main > section a:visited:hover { color: #fff; }
+.reversi main > section a:visited { color: #999; }
+.reversi main > section a:hover { color: #bbb; }
 
 
 /* Low contrast skin */
@@ -153,8 +153,8 @@ hr {
 	background-color: #564b3f;
 }
 
-.low-contrast #workskin a,
-.low-contrast #workskin a:link,
-.low-contrast #workskin a:visited:hover { color: #ccc; }
-.low-contrast #workskin a:visited { color: #999; }
-.low-contrast #workskin a:hover { color: #fff; }
+.low-contrast main > section a,
+.low-contrast main > section a:link,
+.low-contrast main > section a:visited:hover { color: #ccc; }
+.low-contrast main > section a:visited { color: #999; }
+.low-contrast main > section a:hover { color: #fff; }
