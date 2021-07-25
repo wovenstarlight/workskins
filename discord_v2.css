@@ -28,7 +28,7 @@
   margin: 17px 0;
   padding: .125em 16px;
   display: grid;
-	grid-template-columns: 40px 1fr;
+	grid-template-columns: 2.7em 1fr;
 	column-gap: 16px;
 }
 
@@ -45,10 +45,11 @@
 
 /* Sizing the icons */
 #workskin .discord > div p:first-child > img {
-  width: 40px;
-  height: 40px;
+  width: 2.7em;
+  height: 2.7em;
   object-fit: cover;
   border-radius: 100%;
+  margin-top: 2px;
 }
 
 /* Making large images in text messages display correctly */
@@ -66,7 +67,7 @@
 #workskin .discord .system::before {
   content: "";
   height: 16px;
-  width: 40px;
+  width: 2.7em;
   text-align: center;
   display: block;
   background: transparent no-repeat center;
@@ -325,7 +326,7 @@
 
 #workskin .discord > div:last-child > p:last-child {
   display: grid;
-  grid-template-columns: 28px 1fr;
+  grid-template-columns: 2em 1fr;
   column-gap: 16px;
 }
 
@@ -336,8 +337,8 @@
   text-align: center;
   line-height: 0.925em;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 1em;
+  height: 1em;
   margin-left: 8px;
   border-radius: 100%;
 }
