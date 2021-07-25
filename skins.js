@@ -12,11 +12,11 @@ $("#skintoggle a.site").click( function() {
 
 $("#skintoggle .work").click( function() {
 	if ($(this).hasClass("active")) {
-		$("link[class='custom']").prop('disabled', true);
+		$("main > section").removeAttr("id");
 		$(this).html("Enable work skin");
 	}
 	else {
-		$("link[class='custom']").prop('disabled', false);
+		$("main > section").attr("id", "workskin");
 		$(this).html("Disable work skin");
 	}
 	$(this).toggleClass("active inactive");
