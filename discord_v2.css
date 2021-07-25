@@ -237,11 +237,35 @@
   border: none;
   cursor: pointer;
 }
-#workskin .discord a:hover { text-decoration: underline; }
+
+#workskin .discord a:not(.ping):hover { text-decoration: underline; }
+
 #workskin .discord a.ping,
 #workskin .discord a.ping:link,
-#workskin .discord a.ping:hover { color: #7289da; }
-
+#workskin .discord a.ping:hover {
+  border-radius: 3px;
+  padding: 0 2px;
+  font-weight: 500;
+  transition-duration: .05s;
+}
+#workskin .lightmode a.ping,
+#workskin .lightmode a.ping:link {
+  color: rgb(80, 92, 220);
+  background-color: rgba(80, 92, 220, 0.1);
+}
+#workskin .lightmode a.ping:hover {
+  color: #fff;
+  background-color: #505cdc;
+}
+#workskin .darkmode a.ping,
+#workskin .darkmode a.ping:link {
+  color: #dee0fc;
+  background-color: rgba(88, 101, 242, 0.3);
+}
+#workskin .darkmode a.ping:hover {
+  color: #fff;
+  background-color: #5865f2;
+}
 #workskin .darkmode a,
 #workskin .darkmode a:link,
 #workskin .darkmode a:visited,
@@ -352,86 +376,86 @@
 }
 
 /* Default discord role colors, light versions (upper row) */
-#workskin .discord .role1 {
-  color: #1abc9c !important;
-}
+#workskin .discord .role1 { color: rgb(26, 188, 156) !important; }
+#workskin .discord .ping.role1 { background-color: rgba(26, 188, 156, 0.1) !important; }
+#workskin .discord .ping.role1:hover { background-color: rgba(26, 188, 156, 0.3) !important; }
 
-#workskin .discord .role2 {
-  color: #2ecc71 !important;
-}
+#workskin .discord .role2 { color: rgb(46, 204, 113) !important }
+#workskin .discord .ping.role2 { background-color: rgba(46, 204, 113, 0.1) !important; }
+#workskin .discord .ping.role2:hover { background-color: rgba(46, 204, 113, 0.3) !important; }
 
-#workskin .discord .role3 {
-  color: #3498db !important;
-}
+#workskin .discord .role3 { color: rgb(52, 152, 219) !important }
+#workskin .discord .ping.role3 { background-color: rgba(52, 152, 219, 0.1) !important; }
+#workskin .discord .ping.role3:hover { background-color: rgba(52, 152, 219, 0.3) !important; }
 
-#workskin .discord .role4 {
-  color: #9b59b6 !important;
-}
+#workskin .discord .role4 { color: rgb(155, 89, 182) !important }
+#workskin .discord .ping.role4 { background-color: rgba(155, 89, 182, 0.1) !important; }
+#workskin .discord .ping.role4:hover { background-color: rgba(155, 89, 182, 0.3) !important; }
 
-#workskin .discord .role5 {
-  color: #e91e63 !important;
-}
+#workskin .discord .role5 { color: rgb(233, 30, 99) !important }
+#workskin .discord .ping.role5 { background-color: rgba(233, 30, 99, 0.1) !important; }
+#workskin .discord .ping.role5:hover { background-color: rgba(233, 30, 99, 0.3) !important; }
 
-#workskin .discord .role6 {
-  color: #f1c40f !important;
-}
+#workskin .discord .role6 { color: rgb(241, 196, 15) !important }
+#workskin .discord .ping.role6 { background-color: rgba(241, 196, 15, 0.1) !important; }
+#workskin .discord .ping.role6:hover { background-color: rgba(241, 196, 15, 0.3) !important; }
 
-#workskin .discord .role7 {
-  color: #e67e22 !important;
-}
+#workskin .discord .role7 { color: rgb(230, 126, 34) !important }
+#workskin .discord .ping.role7 { background-color: rgba(230, 126, 34, 0.1) !important; }
+#workskin .discord .ping.role7:hover { background-color: rgba(230, 126, 34, 0.3) !important; }
 
-#workskin .discord .role8 {
-  color: #e74c3c !important;
-}
+#workskin .discord .role8 { color: rgb(231, 76, 60) !important; }
+#workskin .discord .ping.role8 { background-color: rgba(231, 76, 60, 0.1) !important; }
+#workskin .discord .ping.role8:hover { background-color: rgba(231, 76, 60, 0.3) !important; }
 
-#workskin .discord .role9 {
-  color: #95a5a6 !important;
-}
+#workskin .discord .role9 { color: rgb(149, 165, 166) !important; }
+#workskin .discord .ping.role9 { background-color: rgba(149, 165, 166, 0.1) !important; }
+#workskin .discord .ping.role9:hover { background-color: rgba(149, 165, 166, 0.3) !important; }
 
-#workskin .discord .role10 {
-  color: #607d8b !important;
-}
+#workskin .discord .role10 { color: rgb(96, 125, 139) !important; }
+#workskin .discord .ping.role10 { background-color: rgba(96, 125, 139, 0.1) !important; }
+#workskin .discord .ping.role10:hover { background-color: rgba(96, 125, 139, 0.3) !important; }
 
 /* Default discord role colors, dark versions (lower row) */
-#workskin .discord .role1a {
-  color: #11906a !important;
-}
+#workskin .discord .role1a { color: rgb(17, 144, 106) !important }
+#workskin .discord .ping.role1a { background-color: rgba(17, 144, 106, 0.1) !important; }
+#workskin .discord .ping.role1a:hover { background-color: rgba(17, 144, 106, 0.3) !important; }
 
-#workskin .discord .role2a {
-  color: #1f8b4c !important;
-}
+#workskin .discord .role2a { color: rgb(31, 139, 76) !important }
+#workskin .discord .ping.role2a { background-color: rgba(31, 139, 76, 0.1) !important; }
+#workskin .discord .ping.role2a:hover { background-color: rgba(31, 139, 76, 0.3) !important; }
 
-#workskin .discord .role3a {
-  color: #206694 !important;
-}
+#workskin .discord .role3a { color: rgb(32, 102, 148) !important }
+#workskin .discord .ping.role3a { background-color: rgba(32, 102, 148, 0.1) !important; }
+#workskin .discord .ping.role3a:hover { background-color: rgba(32, 102, 148, 0.3) !important; }
 
-#workskin .discord .role4a {
-  color: #71368a !important;
-}
+#workskin .discord .role4a { color: rgb(113, 54, 138) !important }
+#workskin .discord .ping.role4a { background-color: rgba(113, 54, 138, 0.1) !important; }
+#workskin .discord .ping.role4a:hover { background-color: rgba(113, 54, 138, 0.3) !important; }
 
-#workskin .discord .role5a {
-  color: #ad1457 !important;
-}
+#workskin .discord .role5a { color: rgb(173, 20, 87) !important }
+#workskin .discord .ping.role5a { background-color: rgba(173, 20, 87, 0.1) !important; }
+#workskin .discord .ping.role5a:hover { background-color: rgba(173, 20, 87, 0.3) !important; }
 
-#workskin .discord .role6a {
-  color: #c27c0e !important;
-}
+#workskin .discord .role6a { color: rgb(194, 124, 14) !important }
+#workskin .discord .ping.role6a { background-color: rgba(194, 124, 14, 0.1) !important; }
+#workskin .discord .ping.role6a:hover { background-color: rgba(194, 124, 14, 0.3) !important; }
 
-#workskin .discord .role7a {
-  color: #a84300 !important;
-}
+#workskin .discord .role7a { color: rgb(168, 67, 0) !important }
+#workskin .discord .ping.role7a { background-color: rgba(168, 67, 0, 0.1) !important; }
+#workskin .discord .ping.role7a:hover { background-color: rgba(168, 67, 0, 0.3) !important; }
 
-#workskin .discord .role8a {
-  color: #992d22 !important;
-}
+#workskin .discord .role8a { color: rgb(153, 45, 34) !important; }
+#workskin .discord .ping.role8a { background-color: rgba(153, 45, 34, 0.1) !important; }
+#workskin .discord .ping.role8a:hover { background-color: rgba(153, 45, 34, 0.3) !important; }
 
-#workskin .discord .role9a {
-  color: #979c9f !important;
-}
+#workskin .discord .role9a { color: rgb(151, 156, 159) !important; }
+#workskin .discord .ping.role9a { background-color: rgba(151, 156, 159, 0.1) !important; }
+#workskin .discord .ping.role9a:hover { background-color: rgba(151, 156, 159, 0.3) !important; }
 
-#workskin .discord .role10a {
-  color: #546e7a !important;
-}
+#workskin .discord .role10a { color: rgb(84, 110, 122) !important; }
+#workskin .discord .ping.role10a { background-color: rgba(84, 110, 122, 0.1) !important; }
+#workskin .discord .ping.role10a:hover { background-color: rgba(84, 110, 122, 0.3) !important; }
 
 /* CUSTOM ROLE GUIDE
 Edit the text YOUR_ROLE_HERE to another name.
