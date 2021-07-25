@@ -47,7 +47,7 @@
 #workskin .discord > div p:first-child > img {
   width: 2.7em;
   height: 2.7em;
-  object-fit: cover;
+  /* object-fit: cover; Property not allowed on AO3 */
   border-radius: 100%;
   margin-top: 2px;
 }
@@ -75,11 +75,13 @@
   margin-top: 4px;
 }
 
-/* System message: Welcome */
-#workskin .discord .system.welcome::before { background-image: url("https://discord.com/assets/e06a573355c490f7ce6e3125ac01db81.svg"); }
+/* System message: Welcome
+Original image URL: https://discord.com/assets/e06a573355c490f7ce6e3125ac01db81.svg */
+#workskin .discord .system.welcome::before { background-image: url("https://i.imgur.com/4lneHce.png"); }
 
-/* System message: Pinned message */
-#workskin .discord .system.pin::before { background-image: url("https://discord.com/assets/5da4cdab01d4d89c593c48c62ae0d937.svg"); }
+/* System message: Pinned message
+Original image URL: https://discord.com/assets/5da4cdab01d4d89c593c48c62ae0d937.svg */
+#workskin .discord .system.pin::before { background-image: url("https://i.imgur.com/SdqqXPO.png"); }
 
 /* Colors for dark and light mode; channel headers, default usernames, timestamps, typing bar placeholder */
 #workskin .darkmode .name,
@@ -109,8 +111,13 @@
   padding: 6px 12px;
   display: grid;
   grid-template-columns: 24px auto 1fr auto;
-  align-items: center;
+  /* align-items: center; Property not allowed on AO3 */
   margin: -3px 0 3px;
+}
+
+#workskin .discord .channel *,
+#workskin .discord .channel *::after {
+  margin: auto 0; /* Since align-items isn't allowed on AO3 */
 }
 
 #workskin .discord .hash {
