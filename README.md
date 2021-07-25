@@ -6,6 +6,7 @@ Currently, this repo contains the following workskins:
 - Extended Homestuck Work Skin (`homestuck_ex`)
 - Homestuck colors Work Skin for The S-Ranks That I Raised (`sranks_hs`)
 - Discord Work Skin with light and dark modes (`discord`)
+ - Now with an updated, cleaner version, `discord_v2`!
 - System Windows Work Skin for The S-Ranks That I Raised (`sranks_system`)
 - System Windows Work Skin for Omniscient Reader's Viewpoint (`orv_system`)
 

@@ -1,0 +1,444 @@
+/* For when creator style is turned off */
+#workskin .hide { display: none; }
+
+/* The overall discord module */
+#workskin .discord {
+  max-width: 710px;
+  margin: 2em auto;
+  padding-bottom: 1.286em;
+  font-family: "Whitney", "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", "GNU Unifont", Verdana, Helvetica, Arial, sans-serif;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 8px #aaaa;
+}
+
+/* Background colors for dark and light mode */
+#workskin .darkmode {
+  background: #36393f;
+  color: #dcddde;
+}
+#workskin .lightmode {
+  background: #fff;
+  color: #2e3338;
+}
+
+/* Aligning the text and system messages */
+#workskin .discord > div.message,
+#workskin .discord > div.system {
+  margin: 17px 0;
+  padding: .125em 16px;
+  display: grid;
+	grid-template-columns: 40px 1fr;
+	column-gap: 16px;
+}
+
+#workskin .discord > div.message p,
+#workskin .discord > div.system p {
+	width: 100%;
+  margin: 0;
+}
+
+#workskin .darkmode > div.message:hover,
+#workskin .darkmode > div.system:hover { background-color: rgba(4, 4, 5, 0.07); }
+#workskin .lightmode > div.message:hover,
+#workskin .lightmode > div.system:hover { background-color: rgba(6, 6, 7, 0.02); }
+
+/* Sizing the icons */
+#workskin .discord > div p:first-child > img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/* Making large images in text messages display correctly */
+#workskin .discord > .message > p:not(:first-child) img.large { width: 400px; }
+
+/* Making usernames act like links when hovered */
+#workskin .discord .name { cursor: pointer; }
+#workskin .discord .name:hover { text-decoration: underline; }
+
+/* Colors for system messages */
+#workskin .darkmode .system { color: #8e9297; }
+#workskin .lightmode .system { color: #6a7480; }
+
+/* General layouts for system message icons */
+#workskin .discord .system::before {
+  content: "";
+  height: 16px;
+  width: 40px;
+  text-align: center;
+  display: block;
+  background: transparent no-repeat center;
+  background-size: 16px 16px;
+  margin-top: 4px;
+}
+
+/* System message: Welcome */
+#workskin .discord .system.welcome::before { background-image: url("https://discord.com/assets/e06a573355c490f7ce6e3125ac01db81.svg"); }
+
+/* System message: Pinned message */
+#workskin .discord .system.pin::before { background-image: url("https://discord.com/assets/5da4cdab01d4d89c593c48c62ae0d937.svg"); }
+
+/* Colors for dark and light mode; channel headers, default usernames, timestamps, typing bar placeholder */
+#workskin .darkmode .name,
+#workskin .darkmode .channel .channelname {
+  color: #fff;
+  font-weight: 600;
+}
+#workskin .lightmode .name,
+#workskin .lightmode .channel .channelname {
+  color: #060607;
+  font-weight: 600;
+}
+
+#workskin .darkmode .hash,
+#workskin .darkmode > div:last-child .placeholder,
+#workskin .darkmode .timestamp {
+  color: #72767d;
+}
+#workskin .lightmode .hash,
+#workskin .lightmode > div:last-child .placeholder,
+#workskin .lightmode .timestamp {
+  color: #747f8d;
+}
+
+/* Alignment and sizing of channel headers and their content */
+#workskin .discord .channel > p {
+  padding: 6px 12px;
+  display: grid;
+  grid-template-columns: 24px auto 1fr auto;
+  align-items: center;
+  margin: -3px 0 3px;
+}
+
+#workskin .discord .hash {
+  font-size: 1.6em;
+  font-weight: normal;
+  text-align: center;
+}
+
+#workskin .discord .channel .channelname {
+  font-size: 1.07em;
+  padding-left: 8px;
+}
+
+#workskin .discord .channel .description {
+  font-size: 0.93em;
+  font-weight: 500;
+  margin-left: 2%;
+  padding: 0 2%;
+  border-left: solid thin;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+/* Right side's fade-out for channel description */
+#workskin .discord .channel .description::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 2em;
+  position: absolute;
+  right: 2%;
+}
+#workskin .darkmode .channel .description::after {
+  background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),to(#36393f));
+	background: linear-gradient(90deg,rgba(54,57,63,0) 0,#36393f);
+}
+#workskin .lightmode .channel .description::after {
+  background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),to(#fff));
+	background: linear-gradient(90deg,rgba(54,57,63,0) 0,#fff);
+}
+
+/* Shading for the channel header */
+#workskin .darkmode .channel { box-shadow: #2c2f33bd 0 2px 1px; }
+#workskin .lightmode .channel { box-shadow: #2c2f332e 0 2px 1px; }
+
+/* Colors for the channel description and its border */
+#workskin .darkmode .channel > p { color: #b9bbbe; }
+#workskin .lightmode .channel > p { color: #4f5660; }
+
+#workskin .darkmode .channel .description { border-left-color: #ffffff0f; }
+#workskin .lightmode .channel .description { border-left-color: #06060714; }
+
+/* The three icons to the right of the channel header. Normal */
+#workskin .discord .channel > p::after {
+  grid-column: 4;
+  content: "";
+  height: 1.4em;
+  width: 6.7em;
+  background: transparent no-repeat center;
+  background-size: 6.7em auto;
+  margin-right: 10px;
+}
+#workskin .darkmode .channel > p:not(.newpins)::after { background-image: url(https://i.imgur.com/2Jo3bI3.png); }
+#workskin .lightmode .channel > p:not(.newpins)::after { background-image: url(https://i.imgur.com/L8KR3n0.png); }
+
+/* The three icons to the right of the channel header. When there are new pins */
+#workskin .darkmode .channel > p.newpins::after { background-image: url(https://i.imgur.com/GClC6WS.png); }
+#workskin .lightmode .channel > p.newpins::after { background-image: url(https://i.imgur.com/xtoAXUx.png); }
+
+/* Top-of-channel header: alignment */
+#workskin .discord .channeltop {
+  padding-left: 16px;
+  padding-right: 4.5%;
+}
+
+/* Top-of-channel header: hash symbol */
+#workskin .discord .channeltop h1:first-child::before {
+  content: '#';
+  display: block;
+  height: 1.41em;
+  width: 1.41em;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.3;
+  border-radius: 100%;
+  margin-bottom: 8px;
+  color: #fff;
+}
+#workskin .darkmode .channeltop h1::before { background-color: #4f545c; }
+#workskin .lightmode .channeltop h1::before { background-color: #747f8d; }
+
+/* Top-of-channel header: heading */
+#workskin .discord .channeltop h1 {
+  font-family: "Whitney", "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", "GNU Unifont", Verdana, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 2.13em;
+  text-align: left;
+  margin-bottom: 8px;
+}
+#workskin .darkmode .channeltop h1 { color: #ffffff; }
+#workskin .lightmode .channeltop h1 { color: #060607; }
+
+/* Top-of-channel header: description */
+#workskin .discord .channeltop p {
+  padding-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  border-bottom: thin solid;
+}
+#workskin .darkmode .channeltop p {
+  border-bottom-color: #ffffff0f;
+  color: #b9bbbe;
+}
+#workskin .lightmode .channeltop p {
+  border-bottom-color: #06060714;
+  color: #4f5660;
+}
+
+/* Colors and decoration for links and pings */
+#workskin .discord a {
+  border: none;
+  cursor: pointer;
+}
+#workskin .discord a:hover { text-decoration: underline; }
+#workskin .discord a.ping,
+#workskin .discord a.ping:link,
+#workskin .discord a.ping:hover { color: #7289da; }
+
+#workskin .darkmode a,
+#workskin .darkmode a:link,
+#workskin .darkmode a:visited,
+#workskin .darkmode a:hover,
+#workskin .darkmode a:visited:hover {
+  color: #00b0f4;
+}
+#workskin .lightmode a,
+#workskin .lightmode a:link,
+#workskin .lightmode a:visited,
+#workskin .lightmode a:hover,
+#workskin .lightmode a:visited:hover {
+  color: #0067e0;
+}
+
+/* Alignment and sizing of message timestamps */
+#workskin .discord .timestamp {
+  padding-left: 6px;
+  font-size: .75em;
+}
+
+/* The edited message notice */
+#workskin .discord .edited {
+  font-size: 0.625em;
+  user-select: none; /* For all others */
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For IE */
+}
+#workskin .darkmode .edited { color: #72767d; }
+#workskin .lightmode .edited { color: #747f8d; }
+
+/* New date divider */
+#workskin .discord .dateline {
+  margin: 1.5em 1em 0;
+  border-top: thin solid;
+}
+
+#workskin .discord .dateline p {
+  padding: 2px 4px;
+  font-size: 0.8em;
+  margin: -1em auto -.75em;
+  font-weight: 600;
+  width: fit-content;
+}
+#workskin .discord .dateline p { width: -webkit-fit-content; }
+#workskin .discord .dateline p { width: -moz-fit-content; }
+
+#workskin .darkmode .dateline { border-top-color: #ffffff0f; }
+#workskin .darkmode .dateline p {
+  color: #72767d;
+  background: #36393f;
+}
+#workskin .lightmode .dateline { border-top-color: #06060714; }
+#workskin .lightmode .dateline p {
+  color: #747f8d;
+  background: #fff;
+}
+
+/* Alignment and colors for typing bar */
+#workskin .discord > div:last-child {
+  margin: 0 2.5%;
+  padding: 11px;
+  border-radius: 8px;
+}
+#workskin .darkmode > div:last-child { background: #40444b; }
+#workskin .lightmode > div:last-child { background: #ebedef; }
+
+/* Aligning the message in the typing bar, and making it unselectable when placeholder displays */
+#workskin .discord > div:last-child > p {
+  margin: 0;
+  padding: 0;
+}
+
+#workskin .discord > div:last-child .placeholder {
+  user-select: none; /* For all others */
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For IE */
+}
+
+/* The upload files button in the typing bar */
+#workskin .discord > div:last-child > p.upload { display: none; } /* Supporting discord_v1.html layout */
+
+#workskin .discord > div:last-child > p:last-child {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  column-gap: 16px;
+}
+
+#workskin .discord > div:last-child > p:last-child::before {
+  content: '+';
+  font-size: 1.35em;
+  font-weight: 600;
+  text-align: center;
+  line-height: 0.925em;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  border-radius: 100%;
+}
+#workskin .darkmode > div:last-child > p:last-child::before {
+  background: #b9bbbe;
+  color: #40444b;
+}
+#workskin .lightmode > div:last-child > p:last-child::before {
+  background: #4f5660;
+  color: #ebedef;
+}
+
+/* Default discord role colors, light versions (upper row) */
+#workskin .discord .role1 {
+  color: #1abc9c !important;
+}
+
+#workskin .discord .role2 {
+  color: #2ecc71 !important;
+}
+
+#workskin .discord .role3 {
+  color: #3498db !important;
+}
+
+#workskin .discord .role4 {
+  color: #9b59b6 !important;
+}
+
+#workskin .discord .role5 {
+  color: #e91e63 !important;
+}
+
+#workskin .discord .role6 {
+  color: #f1c40f !important;
+}
+
+#workskin .discord .role7 {
+  color: #e67e22 !important;
+}
+
+#workskin .discord .role8 {
+  color: #e74c3c !important;
+}
+
+#workskin .discord .role9 {
+  color: #95a5a6 !important;
+}
+
+#workskin .discord .role10 {
+  color: #607d8b !important;
+}
+
+/* Default discord role colors, dark versions (lower row) */
+#workskin .discord .role1a {
+  color: #11906a !important;
+}
+
+#workskin .discord .role2a {
+  color: #1f8b4c !important;
+}
+
+#workskin .discord .role3a {
+  color: #206694 !important;
+}
+
+#workskin .discord .role4a {
+  color: #71368a !important;
+}
+
+#workskin .discord .role5a {
+  color: #ad1457 !important;
+}
+
+#workskin .discord .role6a {
+  color: #c27c0e !important;
+}
+
+#workskin .discord .role7a {
+  color: #a84300 !important;
+}
+
+#workskin .discord .role8a {
+  color: #992d22 !important;
+}
+
+#workskin .discord .role9a {
+  color: #979c9f !important;
+}
+
+#workskin .discord .role10a {
+  color: #546e7a !important;
+}
+
+/* CUSTOM ROLE GUIDE
+Edit the text YOUR_ROLE_HERE to another name.
+For example, a role named "support" would read as follows: #workskin .discord .support
+Make sure not to delete the dot before the role name! */
+#workskin .discord .YOUR_ROLE_HERE {
+  color: #ffffff !important;		  /* This color- #ffffff, the hex code for white- can be changed to whatever you'd like.
+  color: rgb(255,255,255) !important; <-- You can also do RGB colors, if you'd prefer!
+    								  Just replace the hex code in the line above with rgb(#,#,#) instead. 
+    								  Make sure not the delete the "!important" marker! */
+}
