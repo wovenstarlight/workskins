@@ -457,13 +457,24 @@
 #workskin .discord .ping.role10a { background-color: rgba(84, 110, 122, 0.1) !important; }
 #workskin .discord .ping.role10a:hover { background-color: rgba(84, 110, 122, 0.3) !important; }
 
-/* CUSTOM ROLE GUIDE
-Edit the text YOUR_ROLE_HERE to another name.
-For example, a role named "support" would read as follows: #workskin .discord .support
-Make sure not to delete the dot before the role name! */
+/** CUSTOM ROLE GUIDE
+    Edit the text YOUR_ROLE_HERE to another name.
+    For example, a role named "support" would read as follows:
+    - #workskin .discord .support
+    - #workskin .discord .ping.support
+    Make sure not to delete the dot before the role name, or the "!important" marker!
+    
+    To use your role in a ping, take the 3 digits within the rgb() brackets and replace
+    the first three digits within the rgba() brackets in both the .ping.YOUR_ROLE_HERE classes.
+    Make sure not to alter the 0.1/0.3 values at the end.
+    Once you're done, you can create a role ping using an <a class="ping YOUR_ROLE_HERE"> tag!
+*/
 #workskin .discord .YOUR_ROLE_HERE {
-  color: #ffffff !important;		  /* This color- #ffffff, the hex code for white- can be changed to whatever you'd like.
-  color: rgb(255,255,255) !important; <-- You can also do RGB colors, if you'd prefer!
-    								  Just replace the hex code in the line above with rgb(#,#,#) instead. 
-    								  Make sure not the delete the "!important" marker! */
+  color: rgb(255, 255, 255);
+}
+#workskin .discord .ping.YOUR_ROLE_HERE {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+#workskin .discord .ping.YOUR_ROLE_HERE:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
 }
