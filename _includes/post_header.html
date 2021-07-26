@@ -2,8 +2,16 @@
 	<section id="top">
 		<h1><a href="{{ site.baseurl }}">@wovenstarlight's AO3&nbsp;skins</a></h1>
 		<p>
-			<span>Preview on <a href="https://archiveofourown.org/works/{{ page.ao3_id }}">AO3</a></span>
-			<span>Code on <a href="https://gist.github.com/{{ site.author }}/{{ page.gist_id }}">GitHub Gist</a></span>
+			{% if page.ao3_url %}
+			<span>Preview on <a href="{{ page.ao3_url }}">AO3</a></span>
+			{% else %}
+			<span style="font-style: italic;">No AO3 preview</span>
+			{% endif %}
+			{% if page.gist_url %}
+			<span>Code on <a href="{{ page.gist_url }}">GitHub Gist</a></span>
+			{% else %}
+			<span style="font-style: italic;">Code not available</span>
+			{% endif %}
 		</p>
 	</section>
 	
