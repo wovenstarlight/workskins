@@ -135,7 +135,7 @@ Original image URL: https://discord.com/assets/5da4cdab01d4d89c593c48c62ae0d937.
   font-size: 0.93em;
   font-weight: 500;
   margin-left: 8.25px;
-  padding: 0 8.25px;
+  padding: 0 8px;
   border-left: solid thin;
   white-space: nowrap;
   overflow: hidden;
@@ -147,7 +147,7 @@ Original image URL: https://discord.com/assets/5da4cdab01d4d89c593c48c62ae0d937.
 #workskin .discord .channel .description::after {
   content: "";
   display: inline-block;
-  width: 10px;
+  width: 12px;
   height: 2em;
   position: absolute;
   right: 2%;
