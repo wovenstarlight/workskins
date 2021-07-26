@@ -198,8 +198,9 @@ body footer nav a {
 .toc td:not(:first-child) { text-align: right; }
 .toc td.unavailable {
 	font-style: italic;
-	opacity: .75;
+	opacity: 0.5;
 	cursor: default;
+	font-size: 0.9em;
 }
 .toc a {
 	display: block;
