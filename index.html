@@ -1,4 +1,26 @@
 ---
 layout: default
 ---
-<h1>Welcome to @wovenstarlight's work skin repository!</h1>
+<h3 style="text-align: center;">Welcome to @wovenstarlight's work skin repository!</h3>
+
+<p style="text-align: center;">Check out samples of my skins below. If you'd like to request additional features for a skin, leave a comment on the AO3 preview or Gist code for the skin.</p>
+
+<table class="toc">
+	<tbody>
+		{% for post in site.posts %}
+		<tr>
+			<td><a href="{{ post.url | prepend: site.baseurl }}">{{ post.skin_name }}</a></td>
+			{% if post.ao3_url %}
+				<td><a href="{{ post.ao3_url }}">Preview on AO3</a></td>
+			{% else %}
+				<td class="unavailable">No AO3 preview</td>
+			{% endif %}
+			{% if post.gist_url %}
+				<td><a href="{{ post.gist_url }}">Code on GitHub Gist</a></td>
+			{% else %}
+				<td class="unavailable">Code not available</td>
+			{% endif %}
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
