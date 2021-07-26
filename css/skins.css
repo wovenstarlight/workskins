@@ -184,9 +184,33 @@ body footer nav a {
 
 
 
+/* Main page styles */
+/* Table of contents */
+.toc {
+	border-collapse: collapse;
+	max-width: 750px;
+	margin: 0 auto;
+}
+.toc tr a:hover { text-decoration: underline; }
+.toc td { padding: 0.5em 0.25em; }
+.toc td:first-child { padding-left: 1em; width: 50%; }
+.toc td:last-child { padding-right: 1em; }
+.toc td:not(:first-child) { text-align: right; }
+.toc td.unavailable {
+	font-style: italic;
+	opacity: .75;
+	cursor: default;
+}
+.toc a {
+	display: block;
+	border: none;
+}
+
+
+
 /* Skin-specific styles */
 
-/* Default skin */
+/* Default skin (light mode) */
 .default {
 	background-color: #fff;
 	color: #2a2a2a;
@@ -215,8 +239,12 @@ body footer nav a {
 .default footer { background: #900 url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png); }
 .default footer a { color: #fff; }
 
+.default .toc tr:nth-child(2n+1) { background-color: #eee; }
+.default .toc tr:hover,
+.default .toc tr:hover a { background-color: #900; color: #fff; }
+.default .toc tr:hover a:visited { color: #dedede; }
 
-/* Reversi skin */
+/* Reversi skin (dark mode) */
 .reversi {
 	background-color: #333333;
 	color: #eee;
@@ -244,6 +272,14 @@ body footer nav a {
 	border-top: 2px solid #555;
 }
 .reversi footer a { color: #fff; }
+
+.reversi .toc tr:nth-child(2n+1) { background-color: #111; }
+.reversi .toc tr:hover,
+.reversi .toc tr:hover a {
+	background-color: #5998d6;
+	color: #111;
+}
+.reversi .toc tr:hover a:visited { color: #333; }
 
 
 /* Low contrast skin */
@@ -285,3 +321,11 @@ body footer nav a {
 	border-top: 2px solid #777;
 }
 .low-contrast footer a { color: #ccc; }
+
+.low-contrast .toc {
+	background-color: #221609e6;
+	border:  0.75em solid transparent;
+}
+.low-contrast .toc tr:nth-child(2n+1) { background-color: #ffffff1a; }
+.low-contrast .toc tr:nth-child(2n) { background-color: #fff3; }
+.low-contrast .toc tr:hover { background-color: #700; }
