@@ -36,6 +36,51 @@ a:focus {
 	outline: 1px dotted;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, serif;
+	font-weight: 400;
+}
+
+main h1 {
+	font-size: 2.5em;
+	line-height: 1;
+	margin: .5em 0;
+	text-align: center;
+}
+main h2 {
+	font-size: 2.143em;
+	line-height: 1;
+	margin: 1.5em 0;
+	display: block;
+}
+main h3 {
+	font-weight: 500;
+	padding: .125em;
+	border-bottom: .25em double #333;
+	font-size: 1.286em;
+	line-height: 1;
+	margin: .5375em 0;
+}
+main h4 {
+	font-weight: 700;
+	font-size: 1.143em;
+	line-height: 1.125;
+	margin: .5em 0;
+}
+main h5 {
+	font-weight: 600;
+	font-size: 1em;
+	line-height: 1.286;
+	margin: .643em 0;
+}
+main h6 {
+	font-size: .975em;
+	border-bottom: 1px solid;
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 1.5em 0;
+}
+
 hr {
 	width: 33%;
 	margin: .875em auto 1.2525em;
@@ -58,7 +103,6 @@ hr {
 #top h1 { margin: 0; }
 #top h1 a,
 #top h1 a:hover {
-	font-family: Georgia, serif;
 	font-weight: 400;
 	border: none;
 	text-decoration: none;
@@ -148,6 +192,8 @@ body footer nav a {
 	color: #2a2a2a;
 }
 
+.default h2 { color: #333; }
+
 .default #top a { color: #900; }
 
 .default #skintoggle {
@@ -175,6 +221,8 @@ body footer nav a {
 	background-color: #333333;
 	color: #eee;
 }
+
+.reversi h2 { color: #fff; }
 
 .reversi #top a { color: #5998d6; }
 
