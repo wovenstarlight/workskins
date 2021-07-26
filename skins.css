@@ -1,18 +1,17 @@
 /* AO3 defaults */
+html { height: 100%; }
 body {
 	margin: 0;
-	font: 15px/1.125 'Lucida Grande','Lucida Sans Unicode','GNU Unifont',Verdana,Helvetica,sans-serif;
+	font: 12px/1.125 'Lucida Grande','Lucida Sans Unicode','GNU Unifont',Verdana,Helvetica,sans-serif;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100%;
 }
 
-main {
-	padding: 1% 3.5% 3%;
-	margin: .75em 0;
-	border-bottom: 1px solid;
-	font-size: .875em;
-}
+main { padding: 1% 3.5%; }
 
 @media screen and (min-width: 672px) {
-	main { font-size: 1em; }
+	body { font-size: 15px; }
 }
 
 main > section {
@@ -64,17 +63,42 @@ hr {
 
 #skintoggle {
 	margin: 0;
+	padding: 0 10px;
 	text-align: center;
 	box-shadow: inset 0 -6px 10px rgba(0,0,0,.35) , 1px 1px 3px -1px rgba(0,0,0,.25) , inset 0 -1px 0 rgba(0,0,0,.85);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 #skintoggle a {
 	cursor: pointer;
 	display: inline-block;
 	padding: .429em .75em;
 }
-.sitetoggle {
-	border-left: 1px solid #fffa;
-	padding-left: .75em;
+.sitetoggle { padding-left: .75em; }
+.work { flex-shrink: 0; }
+
+/* Footer */
+body footer {
+	text-align: center;
+	font-family: Georgia, serif;
+	padding: .5em 1em;
+}
+
+body footer nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+body footer nav a {
+	padding: .5em;
+	margin: .25em;
+}
+
+@media screen and (max-width: 370px) {
+	body footer nav { flex-direction: column; }
+	body footer nav a { margin: 0; }
 }
 
 
@@ -102,6 +126,9 @@ hr {
 .default main > section a:visited { color: #666; }
 .default main > section a:hover { color: #999; }
 
+.default footer { background: #900 url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png); }
+.default footer a { color: #fff; }
+
 
 /* Reversi skin */
 .reversi {
@@ -123,6 +150,12 @@ hr {
 .reversi main > section a:visited:hover { color: #fff; }
 .reversi main > section a:visited { color: #999; }
 .reversi main > section a:hover { color: #bbb; }
+
+.reversi footer {
+	background: #454545 url(https://archiveofourown.org/images/skins/textures/tiles/black-noise.jpg);
+	border-top: 2px solid #555;
+}
+.reversi footer a { color: #fff; }
 
 
 /* Low contrast skin */
@@ -147,8 +180,7 @@ hr {
 }
 
 .low-contrast main {
-	margin: .75em .5em 1.5em;
-	padding-bottom: 1%;
+	margin: .75em .5em;
 	border: none;
 	background-color: #564b3f;
 }
@@ -158,3 +190,10 @@ hr {
 .low-contrast main > section a:visited:hover { color: #ccc; }
 .low-contrast main > section a:visited { color: #999; }
 .low-contrast main > section a:hover { color: #fff; }
+
+.low-contrast footer {
+	background-color: #241f18;
+	text-transform: lowercase;
+	border-top: 2px solid #777;
+}
+.low-contrast footer a { color: #ccc; }
