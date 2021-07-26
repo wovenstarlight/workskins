@@ -10,10 +10,6 @@ body {
 
 main { padding: 1% 3.5%; }
 
-@media screen and (min-width: 672px) {
-	body { font-size: 15px; }
-}
-
 main > section {
 	max-width: 72em;
 	margin: auto;
@@ -30,9 +26,7 @@ main a {
 	text-decoration: none;
 }
 
-main img {
-	max-width: 100%;
-}
+main img { max-width: 100%; }
 
 table { width: 100%; }
 td { padding: .25em; }
@@ -47,27 +41,58 @@ hr {
 	margin: .875em auto 1.2525em;
 }
 
+/* Responsive text sizing */
+@media screen and (min-width: 672px) {
+	body { font-size: 15px; }
+}
 
-/* Navigation and settings section */
-#preview {
-	padding: 1em;
+
+/* Header */
+/* Navigation and preview */
+#top {
+	padding: 1.5em 1em 1.25em;
 	margin: 0;
+	display: flex;
+	align-items: center;
+}
+#top h1 { margin: 0; }
+#top h1 a,
+#top h1 a:hover {
+	font-family: Georgia, serif;
+	font-weight: 400;
+	border: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+#post #top h1 { margin-right: 15px; }
+#top p {
+	margin: 0;
+	display: flex;
 	text-align: center;
 }
-#preview a {
+#top p span { margin: 0 4px; }
+#top p span:not(:last-of-type) {
+	padding-right: 8px;
+	border-right: 1px solid;
+}
+#top a {
 	font-weight: bold;
 	text-decoration: none;
 	border-bottom: 1px solid;
+	padding: 3px 0;
+	display: inline-block;
 }
-#preview a:hover { text-decoration: underline; }
+#top a:hover { text-decoration: underline; }
 
+/* Site/work skins toggle options */
 #skintoggle {
 	margin: 0;
 	padding: 0 10px;
 	text-align: center;
 	box-shadow: inset 0 -6px 10px rgba(0,0,0,.35) , 1px 1px 3px -1px rgba(0,0,0,.25) , inset 0 -1px 0 rgba(0,0,0,.85);
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 #skintoggle a {
@@ -77,6 +102,11 @@ hr {
 }
 .sitetoggle { padding-left: .75em; }
 .work { flex-shrink: 0; }
+
+#top, #skintoggle { justify-content: center; }
+/* Spacing for header/navbar when displaying a skin preview */
+#post #top, #post #skintoggle { justify-content: space-between; }
+
 
 /* Footer */
 body footer {
@@ -97,10 +127,20 @@ body footer nav a {
 }
 
 @media screen and (max-width: 370px) {
-	body footer nav { flex-direction: column; }
+	#post #top h1 { margin-right: 0; }
+	#top p span { margin: 3px 0; }
+	#top p span:not(:last-child) {
+		padding-right: 0;
+		border-right: none;
+	}
+	
+	#top p, body footer nav { flex-direction: column; }
 	body footer nav a { margin: 0; }
 }
 
+
+
+/* Skin-specific styles */
 
 /* Default skin */
 .default {
@@ -108,7 +148,7 @@ body footer nav a {
 	color: #2a2a2a;
 }
 
-.default #preview a { color: #900; }
+.default #top a { color: #900; }
 
 .default #skintoggle {
 	background: #900 url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png);
@@ -136,7 +176,7 @@ body footer nav a {
 	color: #eee;
 }
 
-.reversi #preview a { color: #5998d6; }
+.reversi #top a { color: #5998d6; }
 
 .reversi #skintoggle {
 	background: #454545 url(https://archiveofourown.org/images/skins/textures/tiles/black-noise.jpg);
@@ -164,8 +204,8 @@ body footer nav a {
 	color: #ccc;
 }
 
-.low-contrast #preview { background: #423d36; }
-.low-contrast #preview a {
+.low-contrast #top { background: #423d36; }
+.low-contrast #top a {
 	color: #c9b8c1;
 }
 

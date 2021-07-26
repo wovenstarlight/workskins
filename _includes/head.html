@@ -1,0 +1,26 @@
+{% if page.skin_name %}
+	{% if page.version_number %}
+		{% assign version = " version " | append: page.version_number %}
+	{% else %}
+		{% assign version = "" %}
+	{% endif %}
+	{% assign page_title = page.skin_name | append: " Work Skin" | append: version | append: " by @wovenstarlight" %}
+{% else %}
+	{% assign page_title = site.title %}
+{% endif %}
+
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="{{ site.author | escape }}">
+	<meta name="description" content="{{ site.description | escape }}">
+	<meta name="keywords" content="Archive Of Our Own, AO3, Work Skin, HTML, CSS">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="{{ page_title | escape }}">
+
+	<title>{{ page_title }}</title>
+
+	<link rel="stylesheet" href="/css/skins.css">
+	{% if page.sheets %}{% for sheet in page.sheets %}
+	<link rel="stylesheet" href="/css/{{ sheet }}.css">
+	{% endfor %}{% endif %}
+</head>
