@@ -1,17 +1,7 @@
-// set site skin on initial page load
-if (!siteSkinIsSet()) {
-	$("#default").click(); // set site skin to default
-}
-else { // site skin is set in sessionStorage
-	var skin = "#" + sessionStorage.getItem("siteSkin");
-	$(skin).click(); // set site skin to whatever the user selected
-}
-
-
-
-function siteSkinIsSet() {
-	return !!sessionStorage.getItem("siteSkin");
-}
+var body = $("body");
+var selected = "#" + body.attr("class");
+// highlight selected theme on first load
+$(selected).addClass("selected");
 
 
 
@@ -21,11 +11,8 @@ $("#skintoggle a.site").click( function() { // when clicking a site skin button
 	$("#skintoggle a.site").removeClass("selected"); // un-highlight all
 	$(this).addClass("selected"); // highlight selected skin button
 	
-	var skin = $(this).attr("id");
-	$("body").attr("class", skin); // set body skin
-
-	sessionStorage.setItem("siteSkin", skin); // store selected skin in browser
-
+	body.attr("class", $(this).attr("id")); // set body skin
+	
 });
 
 
@@ -44,4 +31,5 @@ $("#skintoggle .work").click( function() {
 	}
 
 	$(this).toggleClass("active"); // flip what action the button uses
+	
 });
