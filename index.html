@@ -8,8 +8,13 @@ layout: default
 <table class="toc">
 	<tbody>
 		{% for post in site.posts %}
+		{% if post.version_number %}
+			{% assign postname = post.skin_name | append: " v" | append: post.version_number %}
+		{% else %}
+			{% assign postname = post.skin_name %}
+		{% endif %}
 		<tr>
-			<td><a href="{{ post.url | prepend: site.baseurl }}">{{ post.skin_name }}</a></td>
+			<td><a href="{{ post.url | prepend: site.baseurl }}">{{ postname }}</a></td>
 			{% if post.ao3_url %}
 				<td><a href="{{ post.ao3_url }}">Preview on AO3</a></td>
 			{% else %}

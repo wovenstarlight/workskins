@@ -1,6 +1,6 @@
 {% if page.skin_name %}
 	{% if page.version_number %}
-		{% assign version = " version " | append: page.version_number %}
+		{% assign version = " (version " | append: page.version_number | append: ") " %}
 	{% else %}
 		{% assign version = "" %}
 	{% endif %}
