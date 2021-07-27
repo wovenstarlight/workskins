@@ -23,12 +23,23 @@
   min-height: 23px;
   font-variant: small-caps;
   background: #002f4dcc;
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 #workskin .window > p:first-child {
   background: linear-gradient(#054c6780 2%,#002f4dcc 50%,#00071680 90%);
 }
 
 /* Headings for the various types of windows */
+/* Collapse headings gracefully when window width is too small */
+#workskin .window > p:first-child::before {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 0.5em;
+}
+
+/* Heading text */
 #workskin .announce::before {
   content: "Announcement Window";
 }
@@ -89,7 +100,7 @@
 /* The minimize/resize/close buttons in the menu bar */
 #workskin .window > p:first-child::after {
   content: "—\00A0\00A0❐\00A0\00A0✖";
-  float: right;
+  grid-column: 2;
   cursor: pointer;
 }
 
