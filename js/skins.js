@@ -12,6 +12,7 @@ $("#skintoggle a.site").click( function() { // when clicking a site skin button
 	$(this).addClass("selected"); // highlight selected skin button
 	
 	body.attr("class", $(this).attr("id")); // set body skin
+	
 });
 
 
