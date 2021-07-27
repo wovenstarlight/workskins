@@ -5,12 +5,12 @@
 			{% if page.ao3_url %}
 			<span>Preview on <a href="{{ page.ao3_url }}">AO3</a></span>
 			{% else %}
-			<span style="font-style: italic;">No AO3 preview</span>
+			<span class="unavailable">No AO3 preview</span>
 			{% endif %}
 			{% if page.gist_url %}
 			<span>Code on <a href="{{ page.gist_url }}">GitHub Gist</a></span>
 			{% else %}
-			<span style="font-style: italic;">Code not available</span>
+			<span class="unavailable">Code not available</span>
 			{% endif %}
 		</p>
 	</section>

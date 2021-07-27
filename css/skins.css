@@ -121,6 +121,10 @@ hr {
 	padding-right: 8px;
 	border-right: 1px solid;
 }
+#top p span.unavailable {
+	font-style: italic;
+	padding: 3px 0;
+}
 #top a {
 	font-weight: bold;
 	text-decoration: none;
