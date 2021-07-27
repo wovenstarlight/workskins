@@ -10,7 +10,7 @@ else { // site skin is set in sessionStorage
 
 
 function siteSkinIsSet() {
-	return !!sessionStorage.getItem('siteSkin');
+	return !!sessionStorage.getItem("siteSkin");
 }
 
 
