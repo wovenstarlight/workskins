@@ -108,7 +108,6 @@ hr {
 	text-decoration: none;
 	padding: 0;
 	margin: 0;
-	display: inline;
 }
 #post #top h1 { margin-right: 15px; }
 #top p {
@@ -149,7 +148,12 @@ hr {
 	display: inline-block;
 	padding: .429em .75em;
 }
-.sitetoggle { padding-left: .75em; }
+.sitetoggle div { display: inline-flex; }
+#skintoggle .sitetoggle a.toggle {
+	font-style: italic;
+	cursor: default;
+}
+.sitetoggle a.toggle::after { content: ":"; }
 .work { flex-shrink: 0; }
 
 #top, #skintoggle { justify-content: center; }
@@ -175,15 +179,58 @@ body footer nav a {
 	margin: .25em;
 }
 
-@media screen and (max-width: 370px) {
-	#post #top h1 { margin-right: 0; }
-	#top p span { margin: 3px 0; }
-	#top p span:not(:last-child) {
-		padding-right: 0;
-		border-right: none;
-	}
+/* Stack top header and turn site skin toggle into a dropdown on smaller screens */
+@media screen and (max-width: 530px) {
+	#post #top { flex-direction: column; padding: 0.75em 1em; }
+	#post #top h1 { margin-bottom: 0.5em;}
 	
-	#top p, body footer nav { flex-direction: column; }
+	#skintoggle .sitetoggle a.toggle {
+		font-style: normal;
+		cursor: pointer;
+	}
+	.sitetoggle a.toggle::after { display: none; }
+	
+	.sitetoggle { position: relative; }
+	.sitetoggle div {
+		width: calc(100% - 10px);
+		padding: 5px;
+		flex-direction: column;
+		position: absolute;
+		left: 0;
+		top: 2em;
+		z-index: 4;
+	}
+	.sitetoggle:not(:hover) div { display: none; }
+	
+	.sitetoggle div a:not(:last-child) { border-bottom: 1px solid #888; }
+	
+	
+	
+	.default #skintoggle .sitetoggle:hover a.toggle {
+		background: #ddd;
+		color: #111;
+	}
+	.default .sitetoggle div { background-color: #dcdcdc; }
+	.default .sitetoggle div a { color: #2a2a2a; }
+	.default #skintoggle .sitetoggle div a.selected,
+	.default #skintoggle .sitetoggle div a:hover { background-color: rgba(255,255,255,.25); }
+	
+	.reversi #skintoggle .sitetoggle:hover a.toggle { background: #2a2a2a; }
+	.reversi .sitetoggle div { background-color: #2a2a2a; }
+	.reversi #skintoggle .sitetoggle div a.selected,
+	.reversi #skintoggle .sitetoggle div a:hover { background-color: #111; }
+	
+	.low-contrast #skintoggle .sitetoggle:hover a.toggle { background: #000c; }
+	.low-contrast .sitetoggle div,
+	.low-contrast .sitetoggle div a.selected,
+	.low-contrast .sitetoggle div a:hover { background-color: rgba(0,0,0,.8); }
+	.low-contrast .sitetoggle a.selected,
+	.low-contrast .sitetoggle a:hover { color: #c22; }
+}
+
+/* Stack footer links on smaller screens */
+@media screen and (max-width: 370px) {
+	body footer nav { flex-direction: column; }
 	body footer nav a { margin: 0; }
 }
 
@@ -238,8 +285,8 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 	background: #900 url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png);
 	color: #fff;
 }
-.default #skintoggle a.selected,
-.default #skintoggle a:hover {
+.default #skintoggle a:not(.toggle).selected,
+.default #skintoggle a:not(.toggle):hover {
 	background: #ddd;
 	color: #111;
 }
@@ -274,8 +321,8 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 	background: #454545 url(https://archiveofourown.org/images/skins/textures/tiles/black-noise.jpg);
 	color: #fff;
 }
-.reversi #skintoggle a.selected,
-.reversi #skintoggle a:hover { background: #2a2a2a; }
+.reversi #skintoggle a:not(.toggle).selected,
+.reversi #skintoggle a:not(.toggle):hover { background: #2a2a2a; }
 
 .reversi main > section a,
 .reversi main > section a:link,
@@ -316,8 +363,8 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 	background-color: #2b2823;
 	color: #ffffffbf;
 }
-.low-contrast #skintoggle a.selected,
-.low-contrast #skintoggle a:hover {
+.low-contrast #skintoggle a:not(.toggle).selected,
+.low-contrast #skintoggle a:not(.toggle):hover {
 	color: #c22;
 	background: #000c;
 }
