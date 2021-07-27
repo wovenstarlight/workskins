@@ -22,8 +22,7 @@
 	<link rel="stylesheet" href="{{ '/css/skins.css' | prepend: site.baseurl }}">
 	{% if page.sheets %}
 		{% for sheet in page.sheets %}
-		{% assign url = {{ sheet }} | prepend: "/css/" %}
-		<link rel="stylesheet" href="{{ url | prepend: site.baseurl }}">
+		<link rel="stylesheet" href="{{ '/css/{{ sheet }}' | prepend: site.baseurl }}">
 		{% endfor %}
 	{% endif %}
 </head>
