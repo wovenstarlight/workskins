@@ -6,16 +6,16 @@
 
 /* Angular borders, blue and white. */
 #workskin .blue {
-  background: -moz-linear-gradient(45deg, transparent 10px, #3abafd 10px), -moz-linear-gradient(315deg, transparent 20px, #3abafd 20px), -moz-linear-gradient(225deg, transparent 10px, #3abafd 10px), -moz-linear-gradient(135deg, transparent 20px, #3abafd 20px);
+  background: -moz-linear-gradient(45deg, transparent 10px, #0091dd 10px), -moz-linear-gradient(315deg, transparent 20px, #0091dd 20px), -moz-linear-gradient(225deg, transparent 10px, #0091dd 10px), -moz-linear-gradient(135deg, transparent 20px, #0091dd 20px);
 }
 #workskin .blue {
-  background: -o-linear-gradient(45deg, transparent 10px, #3abafd 10px), -o-linear-gradient(315deg, transparent 20px, #3abafd 20px), -o-linear-gradient(225deg, transparent 10px, #3abafd 10px), -o-linear-gradient(135deg, transparent 20px, #3abafd 20px);
+  background: -o-linear-gradient(45deg, transparent 10px, #0091dd 10px), -o-linear-gradient(315deg, transparent 20px, #0091dd 20px), -o-linear-gradient(225deg, transparent 10px, #0091dd 10px), -o-linear-gradient(135deg, transparent 20px, #0091dd 20px);
 }
 #workskin .blue {
-  background: -webkit-linear-gradient(45deg, transparent 10px, #3abafd 10px), -webkit-linear-gradient(315deg, transparent 20px, #3abafd 20px), -webkit-linear-gradient(225deg, transparent 10px, #3abafd 10px), -webkit-linear-gradient(135deg, transparent 20px, #3abafd 20px);
+  background: -webkit-linear-gradient(45deg, transparent 10px, #0091dd 10px), -webkit-linear-gradient(315deg, transparent 20px, #0091dd 20px), -webkit-linear-gradient(225deg, transparent 10px, #0091dd 10px), -webkit-linear-gradient(135deg, transparent 20px, #0091dd 20px);
 }
 #workskin .blue {
-  background: linear-gradient(45deg, transparent 10px, #3abafd 10px), linear-gradient(315deg, transparent 20px, #3abafd 20px), linear-gradient(225deg, transparent 10px, #3abafd 10px), linear-gradient(135deg, transparent 20px, #3abafd 20px);
+  background: linear-gradient(45deg, transparent 10px, #0091dd 10px), linear-gradient(315deg, transparent 20px, #0091dd 20px), linear-gradient(225deg, transparent 10px, #0091dd 10px), linear-gradient(135deg, transparent 20px, #0091dd 20px);
 }
 #workskin .white {
   background: -moz-linear-gradient(45deg, transparent 10px, #f0fefe 10px), -moz-linear-gradient(315deg, transparent 20px, #f0fefe 20px), -moz-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -moz-linear-gradient(135deg, transparent 20px, #f0fefe 20px);
@@ -38,8 +38,8 @@
   background-size: 50% 50%;
   background-repeat: no-repeat;
   padding: 2px;
-  box-shadow: 0 0 20px 10px #4fffff11, 0 0 10px 20px #4fffff11 inset;
   border-radius: 15px;
+  filter: drop-shadow(0 0 10px #4fffff33);
 }
 /* Accounting for AO3's additional <p> tags. */
 #workskin .windorv p {
@@ -82,7 +82,7 @@
 /* Scenario window navigation bar, angular and underlying borders. */
 #workskin .outer {
   padding: 1px;
-  box-shadow: 0px 10px 0px 0px #3abafd, 0px 16px 0px -1px #f0fefe;
+  box-shadow: 0px 10px 0px 0px #0091dd, 0px 16px 0px -1px #f0fefe;
   margin-bottom: 25px;
   margin-top: -5px;
   background: linear-gradient(225deg, transparent 10px, #f0fefe 10px), linear-gradient(315deg, transparent 20px, #f0fefe 20px);
@@ -102,16 +102,16 @@
   padding: 4px;
   font-size: 1.2em;
   text-align: center;
-  background: linear-gradient(225deg, transparent 10px, #5cebfc 10px), linear-gradient(315deg, transparent 20px, #5cebfc 20px);
+  background: linear-gradient(225deg, transparent 10px, #01c8e8 10px), linear-gradient(315deg, transparent 20px, #01c8e8 20px);
 }
 #workskin .inner {
-  background: -moz-linear-gradient(225deg, transparent 10px, #5cebfc 10px), -moz-linear-gradient(315deg, transparent 20px, #5cebfc 20px);
+  background: -moz-linear-gradient(225deg, transparent 10px, #01c8e8 10px), -moz-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
 }
 #workskin .inner {
-  background: -o-linear-gradient(225deg, transparent 10px, #5cebfc 10px), -o-linear-gradient(315deg, transparent 20px, #5cebfc 20px);
+  background: -o-linear-gradient(225deg, transparent 10px, #01c8e8 10px), -o-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
 }
 #workskin .inner {
-  background: -webkit-linear-gradient(225deg, transparent 10px, #5cebfc 10px), -webkit-linear-gradient(315deg, transparent 20px, #5cebfc 20px);
+  background: -webkit-linear-gradient(225deg, transparent 10px, #01c8e8 10px), -webkit-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
 }
 
 /* Navbar styling. */
