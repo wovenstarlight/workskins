@@ -123,7 +123,8 @@ hr {
 }
 #top p span.unavailable {
 	font-style: italic;
-	padding: 3px auto;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 #top a {
 	font-weight: bold;
