@@ -1,29 +1,16 @@
-<header>
-	<section id="top">
-		<h1><a href="{{ site.baseurl }}">@wovenstarlight's AO3 skins</a></h1>
-		<p>
-			{% if page.ao3_url %}
-			<span>Preview on <a href="{{ page.ao3_url }}">AO3</a></span>
-			{% else %}
-			<span class="unavailable">No AO3 preview</span>
-			{% endif %}
-			{% if page.gist_url %}
-			<span>Code on <a href="{{ page.gist_url }}">GitHub Gist</a></span>
-			{% else %}
-			<span class="unavailable">Code not available</span>
-			{% endif %}
-		</p>
-	</section>
-	
-	<p id="skintoggle">
-		<span class="sitetoggle">
-			<a class="toggle">Toggle site skin</a>
-			<div>
-				<a id="default" class="site">Default</a>
-				<a id="reversi" class="site">Reversi (Dark)</a>
-				<a id="low-contrast" class="site">Low-Contrast</a>
-			</div>
-		</span><!--
-	 --><a class="work active">Disable work skin</a>
-	</p>
-</header>
+{% capture links %}<p>
+	{% if page.ao3_url %}
+	<span>Preview on <a href="{{ page.ao3_url }}">AO3</a></span>
+	{% else %}
+	<span class="unavailable">No AO3 preview</span>
+	{% endif %}
+	{% if page.gist_url %}
+	<span>Code on <a href="{{ page.gist_url }}">GitHub Gist</a></span>
+	{% else %}
+	<span class="unavailable">Code not available</span>
+	{% endif %}
+</p>{% endcapture %}
+
+{% capture work %}<a class="work active">Disable work skin</a>{% endcapture %}
+
+{% include header.html sourcelinks=links workskin=work %}

@@ -1,16 +1,11 @@
 <header>
 	<section id="top">
-		<h1><a href="{{ site.baseurl }}">@wovenstarlight's AO3 skins</a></h1>
+		<h1><a href="{{ site.baseurl }}">@wovenstarlight's AO3 skins</a></h1><!--
+		-->{{ include.sourcelinks }}
 	</section>
 	
-	<p id="skintoggle">
-		<span class="sitetoggle">
-			<a class="toggle">Toggle site skin</a>
-			<div>
-				<a id="default" class="site">Default</a>
-				<a id="reversi" class="site">Reversi (Dark)</a>
-				<a id="low-contrast" class="site">Low-Contrast</a>
-			</div>
-		</span>
-	</p>
+	<section id="skintoggle">
+		{% include sitetoggle.html %}<!--
+		-->{{ include.workskin }}
+	</section>
 </header>
