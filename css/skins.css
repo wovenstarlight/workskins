@@ -207,6 +207,14 @@ body footer nav a {
 	border: none;
 }
 
+/* Preface and afterword notes sections */
+div.notes {
+	margin: 1.5em 3em;
+	padding: .643em .643em 0;
+}
+div.notes h3 { border-bottom: 1px solid; }
+div.notes .userstuff { margin: .643em;}
+div.notes .userstuff p:first-child { margin-top: 0; }
 
 
 /* Skin-specific styles */
@@ -245,6 +253,7 @@ body footer nav a {
 .default .toc tr:hover a { background-color: #900; color: #fff; }
 .default .toc tr:hover a:visited { color: #dedede; }
 
+
 /* Reversi skin (dark mode) */
 .reversi {
 	background-color: #333333;
@@ -281,6 +290,8 @@ body footer nav a {
 	color: #111;
 }
 .reversi .toc tr:hover a:visited { color: #333; }
+
+.reversi div.notes h3 { border-color: #555; }
 
 
 /* Low contrast skin */
@@ -330,3 +341,8 @@ body footer nav a {
 .low-contrast .toc tr:nth-child(2n+1) { background-color: #ffffff1a; }
 .low-contrast .toc tr:nth-child(2n) { background-color: #fff3; }
 .low-contrast .toc tr:hover { background-color: #700; }
+
+.low-contrast div.notes {
+	background-color: rgba(34,22,9,.6);
+	padding-bottom: .5em;
+}
