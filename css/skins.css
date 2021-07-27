@@ -254,9 +254,10 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 .default footer a { color: #fff; }
 
 .default .toc tr:nth-child(2n+1) { background-color: #eee; }
+.default .toc tr a:visited { color: #2a2a2a; }
 .default .toc tr:hover,
-.default .toc tr:hover a { background-color: #900; color: #fff; }
-.default .toc tr:hover a:visited { color: #dedede; }
+.default .toc tr:hover a,
+.default .toc tr:hover a:visited { background-color: #900; color: #fff; }
 
 
 /* Reversi skin (dark mode) */
@@ -288,13 +289,14 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 }
 .reversi footer a { color: #fff; }
 
+.reversi .toc tr a:visited { color: #eee; }
 .reversi .toc tr:nth-child(2n+1) { background-color: #111; }
 .reversi .toc tr:hover,
-.reversi .toc tr:hover a {
+.reversi .toc tr:hover a,
+.reversi .toc tr:hover a:visited {
 	background-color: #5998d6;
 	color: #111;
 }
-.reversi .toc tr:hover a:visited { color: #333; }
 
 .reversi div.notes h3 { border-color: #555; }
 
@@ -345,7 +347,13 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 }
 .low-contrast .toc tr:nth-child(2n+1) { background-color: #ffffff1a; }
 .low-contrast .toc tr:nth-child(2n) { background-color: #fff3; }
-.low-contrast .toc tr:hover { background-color: #700; }
+.low-contrast .toc tr a,
+.low-contrast .toc tr a:visited { color: #c9b8c1; }
+.low-contrast .toc tr:hover,
+.low-contrast .toc tr:hover a:hover {
+	background-color: #700;
+	color: #f9c4e0;
+}
 
 .low-contrast div.notes {
 	background-color: rgba(34,22,9,.6);
