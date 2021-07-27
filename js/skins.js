@@ -2,15 +2,15 @@
 if (!siteSkinIsSet()) {
 	$("#default").click(); // set site skin to default
 }
-else { // site skin is set in localStorage
-	var skin = "#" + localStorage.getItem("siteSkin");
+else { // site skin is set in sessionStorage
+	var skin = "#" + sessionStorage.getItem("siteSkin");
 	$(skin).click(); // set site skin to whatever the user selected
 }
 
 
 
 function siteSkinIsSet() {
-	return !!localStorage.getItem('siteSkin');
+	return !!sessionStorage.getItem('siteSkin');
 }
 
 
@@ -24,7 +24,7 @@ $("#skintoggle a.site").click( function() { // when clicking a site skin button
 	var skin = $(this).attr("id");
 	$("body").attr("class", skin); // set body skin
 
-	localStorage.setItem("siteSkin", skin); // store selected skin in browser
+	sessionStorage.setItem("siteSkin", skin); // store selected skin in browser
 
 });
 
