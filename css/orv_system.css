@@ -77,13 +77,13 @@
 }
 
 /* The minimize, resize, and close buttons on the window. */
-.lastwin::before {
+#workskin .lastwin::before {
   content: "— ❐ ✖";
   float: right;
   padding: 3px 15px 0 0;
   font-size: 1.2em;
 }
-.yellow.lastwin::before {
+#workskin .yellow.lastwin::before {
   padding: 3px 35px 0 0;
   transform: scaleX(-1);
   position: absolute;
