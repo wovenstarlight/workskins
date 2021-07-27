@@ -1,11 +1,19 @@
 /* The main window. Change the width of your windows by altering the "max-width" value below. */
-#workskin .userstuff > .blue {
-  margin: 2em auto;
-  max-width: 600px;
-  box-shadow: 0 0 20px 10px #4fffff4f, 0 0 0px 10px #4fffff4a inset;
+#workskin .userstuff > .windorv {
+	margin: 3em auto;
+	max-width: 600px;
 }
 
-/* Angular borders, blue and white. */
+/* Glowing around the edges. */
+#workskin .userstuff > .blue {
+	box-shadow: 0 0 20px 10px #4fffff4f, 0 0 0px 10px #4fffff4a inset;
+}
+#workskin .userstuff > .yellow {
+  box-shadow: 0 0 20px 10px #ffff004f, 0 0 0px 10px #ffff0046 inset;
+  transform: scaleY(-1);
+}
+
+/* Angular borders: blue, yellow, and white. */
 #workskin .blue {
   background: -moz-linear-gradient(45deg, transparent 10px, #0091dd 10px), -moz-linear-gradient(135deg, transparent 20px, #0091dd 20px), -moz-linear-gradient(225deg, transparent 10px, #0091dd 10px), -moz-linear-gradient(315deg, transparent 20px, #0091dd 20px);
 }
@@ -18,6 +26,20 @@
 #workskin .blue {
   background: linear-gradient(45deg, transparent 10px, #0091dd 10px), linear-gradient(315deg, transparent 20px, #0091dd 20px), linear-gradient(225deg, transparent 10px, #0091dd 10px), linear-gradient(135deg, transparent 20px, #0091dd 20px);
 }
+
+#workskin .yellow {
+  background: -moz-linear-gradient(45deg, transparent 10px, #f1a900 10px), -moz-linear-gradient(135deg, transparent 20px, #f1a900 20px), -moz-linear-gradient(225deg, transparent 10px, #f1a900 10px), -moz-linear-gradient(315deg, transparent 20px, #f1a900 20px);
+}
+#workskin .yellow {
+  background: -o-linear-gradient(45deg, transparent 10px, #f1a900 10px), -o-linear-gradient(315deg, transparent 20px, #f1a900 20px), -o-linear-gradient(225deg, transparent 10px, #f1a900 10px), -o-linear-gradient(135deg, transparent 20px, #f1a900 20px);
+}
+#workskin .yellow {
+  background: -webkit-linear-gradient(45deg, transparent 10px, #f1a900 10px), -webkit-linear-gradient(315deg, transparent 20px, #f1a900 20px), -webkit-linear-gradient(225deg, transparent 10px, #f1a900 10px), -webkit-linear-gradient(135deg, transparent 20px, #f1a900 20px);
+}
+#workskin .yellow {
+  background: linear-gradient(45deg, transparent 10px, #f1a900 10px), linear-gradient(315deg, transparent 20px, #f1a900 20px), linear-gradient(225deg, transparent 10px, #f1a900 10px), linear-gradient(135deg, transparent 20px, #f1a900 20px);
+}
+
 #workskin .white {
   background: -moz-linear-gradient(45deg, transparent 10px, #f0fefe 10px), -moz-linear-gradient(135deg, transparent 20px, #f0fefe 20px), -moz-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -moz-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
 }
@@ -42,10 +64,7 @@
   border-radius: 30px 15px;
 }
 /* Accounting for AO3's additional <p> tags. */
-#workskin .windorv p {
-  margin: 0;
-  padding: 0 !important;
-}
+#workskin .windorv p { margin: 0; }
 
 /* Styling for the text within the window. */
 #workskin .lastwin {
@@ -61,15 +80,21 @@
 .lastwin::before {
   content: "— ❐ ✖";
   float: right;
-  padding: 2px 15px 0 0;
+  padding: 3px 15px 0 0;
   font-size: 1.2em;
+}
+.yellow.lastwin::before {
+  padding: 3px 35px 0 0;
+  transform: scaleX(-1);
+  position: absolute;
+  z-index: 1;
 }
 
 /* Aligning the paragraphs within the window. */
 #workskin .lastwin p {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
+  padding: 0 10px;
   width: fit-content;
 }
 #workskin .lastwin p {
@@ -82,19 +107,35 @@
 /* Scenario window navigation bar, angular and underlying borders. */
 #workskin .outer {
   padding: 1px;
-  box-shadow: 0px 10px 0px 0px #0091dd, 0px 16px 0px -1px #f0fefe;
   margin-bottom: 25px;
   margin-top: -5px;
+}
+#workskin .blue .outer {
   background: -webkit-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -webkit-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
 }
-#workskin .outer {
+#workskin .blue .outer {
   background: -o-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -o-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
 }
-#workskin .outer {
+#workskin .blue .outer {
   background: -moz-linear-gradient(225deg, transparent 10px, #f0fefe 10px), -moz-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
 }
-#workskin .outer {
+#workskin .blue .outer {
   background: linear-gradient(225deg, transparent 10px, #f0fefe 10px), linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+  box-shadow: 0px 10px 0px 0px #0091dd, 0px 16px 0px -1px #f0fefe;
+}
+
+#workskin .yellow .outer {
+  background: -webkit-linear-gradient(225deg, transparent 20px, #f0fefe 20px), -webkit-linear-gradient(315deg, transparent 10px, #f0fefe 10px);
+}
+#workskin .yellow .outer {
+  background: -o-linear-gradient(225deg, transparent 20px, #f0fefe 20px), -o-linear-gradient(315deg, transparent 10px, #f0fefe 10px);
+}
+#workskin .yellow .outer {
+  background: -moz-linear-gradient(225deg, transparent 20px, #f0fefe 20px), -moz-linear-gradient(315deg, transparent 10px, #f0fefe 10px);
+}
+#workskin .yellow .outer {
+  background: linear-gradient(225deg, transparent 20px, #f0fefe 20px), linear-gradient(135deg, transparent 10px, #f0fefe 10px);
+  box-shadow: 0px 10px 0px 0px #f1a900, 0px 16px 0px -1px #f0fefe;
 }
 
 /* More navbar angular borders and navbar text styling. */
@@ -102,25 +143,39 @@
   padding: 4px;
   font-size: 1.2em;
   text-align: center;
+}
+#workskin .blue .inner {
   background: -webkit-linear-gradient(225deg, transparent 10px, #01c8e8 10px), -webkit-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
 }
-#workskin .inner {
+#workskin .blue .inner {
   background: -o-linear-gradient(225deg, transparent 10px, #01c8e8 10px), -o-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
 }
-#workskin .inner {
+#workskin .blue .inner {
   background: -moz-linear-gradient(225deg, transparent 10px, #01c8e8 10px), -moz-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
 }
-#workskin .inner {
+#workskin .blue .inner {
   background: linear-gradient(225deg, transparent 10px, #01c8e8 10px), linear-gradient(135deg, transparent 20px, #01c8e8 20px);
+}
+#workskin .yellow .inner {
+  background: -webkit-linear-gradient(225deg, transparent 20px, #ffcb00 20px), -webkit-linear-gradient(315deg, transparent 10px, #ffcb00 10px);
+}
+#workskin .yellow .inner {
+  background: -o-linear-gradient(225deg, transparent 20px, #ffcb00 20px), -o-linear-gradient(315deg, transparent 10px, #ffcb00 10px);
+}
+#workskin .yellow .inner {
+  background: -moz-linear-gradient(225deg, transparent 20px, #ffcb00 20px), -moz-linear-gradient(315deg, transparent 10px, #ffcb00 10px);
+}
+#workskin .yellow .inner {
+  background: linear-gradient(225deg, transparent 20px, #ffcb00 20px), linear-gradient(135deg, transparent 10px, #ffcb00 10px);
 }
 
 /* Navbar styling. */
 #workskin .scenario {
-  background-position: top right, top left;
-  -moz-background-size: 50% 100%;
-  -webkit-background-size: 50% 100%;
-  background-size: 50% 100%;
-  background-repeat: no-repeat;
+  background-position: top right, top left !important;
+  -moz-background-size: 50% 100% !important;
+  -webkit-background-size: 50% 100% !important;
+  background-size: 50% 100% !important;
+  background-repeat: no-repeat !important;
 }
 
 /* Styling for the headings, like scenario name and clear conditions. */
@@ -134,3 +189,7 @@
 #workskin .lastwin p:not(.header) {
   text-align: left;
 }
+
+/* Flipping the story window appropriately. */
+#workskin .yellow.lastwin { transform: scale(-1, -1); }
+#workskin .yellow.lastwin > * { transform: scaleX(-1); }
