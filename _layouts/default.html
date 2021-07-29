@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	{% include head.html %}
-{% if page.bodyid %}
+{% if layout.bodyid %}
 <body class="low-contrast" id="{{ page.bodyid }}">
 {% else %}
 <body class="low-contrast">
 {% endif %}
-	{% include {{ page.headerfile }} %}
+	{% include {{ layout.headerfile }} %}
 	
 	<!-- main opening tag included in header -->
 		<section id="workskin" class="workskin"><div class="userstuff">
