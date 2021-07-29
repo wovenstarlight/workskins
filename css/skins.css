@@ -105,7 +105,10 @@ hr {
 	display: flex;
 	align-items: center;
 }
-#top h1 { margin: 0; }
+#top h1 {
+	margin: 0;
+	font-size: 1.5em;
+}
 #top h1 a,
 #top h1 a:hover {
 	font-weight: 400;
