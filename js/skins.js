@@ -1,4 +1,5 @@
 var body = $("body");
+var workskin = $("#workskin");
 var selected = "#" + body.attr("class");
 // highlight selected theme on first load
 $(selected).addClass("selected");
@@ -21,12 +22,12 @@ $("#skintoggle a.site").click( function() { // when clicking a site skin button
 $("#skintoggle .work").click( function() {
 
 	if ($(this).hasClass("active")) { // clicking Disable Work Skin
-		$("main > section").removeAttr("id");
+		workskin.removeAttr("id");
 		$(this).html("Enable work skin");
 	}
 
 	else { // clicking Enable Work Skin
-		$("main > section").attr("id", "workskin");
+		workskin.attr("id", "workskin");
 		$(this).html("Disable work skin");
 	}
 
