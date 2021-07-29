@@ -1,6 +1,6 @@
 /* Standard header prompt and commands */
 #workskin .prompt { /* Title of the top of the page. Apply to <p> tags. ==> */
-	font-size: 32px;
+	font-size: 2.133em;
 	font-weight: bold;
 	font-family: "Courier New", courier, monospace;
 	color: #000;
@@ -10,14 +10,14 @@
 					Use &gt; instead of > and apply using <span> tag, so that
 					it looks like <span class="command1">&gt;</span>. */
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	font-size: 1.6em;
 	font-weight: normal;
 	color: #000000;
 }
 #workskin .command2,
 #workskin .com2 { /* Command for the next page, looks like a link. Apply to <span> tag. */
 	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 24px;
+	font-size: 1.6em;
 	font-weight: normal;
 	text-decoration: underline;
 	color: #0000ee;
@@ -51,12 +51,9 @@
 */
 #workskin .block {
 	max-width: 650px;
-	margin: 20px auto;
+	margin: 1.33em auto;
 	border: 1px dashed gray;
-	padding: 10px 35px;
-	font-size: 14px;
-	font-weight: bold;
-	font-family: Courier New, courier, monospace;
+	padding: 0.7em 2.5em;
 	background: #eeeeee;
 	color: #000000;
 }
@@ -92,8 +89,10 @@
 	a .block element. Use class="text secondclass" and replace <secondclass> with
 	the appropriate character name.
 */
+
+#workskin .block,
 #workskin .text {
-	font-size: 14px;
+	font-size: 0.933em;
 	font-weight: bold;
 	font-family: "Courier New", courier, monospace;
 }
@@ -1395,18 +1394,21 @@
 	(under "Interactive pesterlog").
 */
 #workskin .ichum {
-	font-size: 14px;
+	font-size: 0.933em;
 	font-weight: bold;
 	font-family: Courier New, courier, monospace;
 	border-collapse: collapse;
-	margin: 10px auto;
+	margin: 0.7em auto;
+}
+#workskin .block .ichum {
+	font-size: 1em;
 }
 
 #workskin .ichum td:nth-child(even) {
 	text-align: left;
 	vertical-align: middle;
 	width: 100%;
-	padding-left: 6px;
+	padding-left: 0.4em;
 }
 
 #workskin .ichum td:first-child {
@@ -1426,7 +1428,7 @@
 	background-color: #292929;
 }
 #workskin .ichum tr:hover {
-	background-color: #2222;
+	background-color: #aaa2;
 }
 
 /**	CUSTOM TEXT COLORS
