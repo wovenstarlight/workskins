@@ -7,3 +7,12 @@ ao3_ua: https://archiveofourown.org/users/wovenstarlight/pseuds/unpredictableArt
 domain: wovenstarlight.github.io
 url: https://wovenstarlight.github.io
 baseurl: /workskins
+
+# Adding default layout and header file for non-post pages.
+defaults:
+  -
+    scope:
+      path: "" # all files in the project
+    values:
+      layout: "default"
+      headerfile: "header.html"

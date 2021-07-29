@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html>
-	{% include head.html %}
-<body id="post" class="low-contrast">
-	{% include post_header.html %}
-
-	<!-- main opening tag included in header -->
-		<section id="workskin" class="workskin"><div class="userstuff">
-			{{ content }}
-		</div></section>
-	</main>
-
-	{% include footer.html %}
-</body>
-</html>
+---
+layout:		default
+id:			post
+headerfile:	post_header.html
+---
+{{ content }}
