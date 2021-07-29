@@ -4,9 +4,11 @@
 <body id="post" class="low-contrast">
 	{% include post_header.html %}
 
-	<main><section id="workskin"><div class="userstuff">
-		{{ content }}
-	</div></section></main>
+	<!-- main opening tag included in header -->
+		<section id="workskin" class="workskin"><div class="userstuff">
+			{{ content }}
+		</div></section>
+	</main>
 
 	{% include footer.html %}
 </body>

@@ -8,25 +8,30 @@ body {
 	height: 100%;
 }
 
-main { padding: 1% 3.5%; }
+main {
+	display: grid;
+	grid-template-rows: auto 1fr;
+}
 
-main > section {
+.workskin { padding: 1% 3.5%; }
+
+.userstuff {
 	max-width: 72em;
 	margin: auto;
 }
 
-main p {
+.workskin p {
 	margin: 1.286em auto;
 	padding: 0;
 	line-height: 1.5;
 }
 
-main a {
+.workskin a {
 	border-bottom: 1px solid;
 	text-decoration: none;
 }
 
-main img { max-width: 100%; }
+.workskin img { max-width: 100%; }
 
 table { width: 100%; }
 td { padding: .25em; }
@@ -41,19 +46,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 }
 
-main h1 {
+.workskin h1 {
 	font-size: 2.5em;
 	line-height: 1;
 	margin: .5em 0;
 	text-align: center;
 }
-main h2 {
+.workskin h2 {
 	font-size: 2.143em;
 	line-height: 1;
 	margin: 1.5em 0;
 	display: block;
 }
-main h3 {
+.workskin h3 {
 	font-weight: 500;
 	padding: .125em;
 	border-bottom: .25em double #333;
@@ -61,19 +66,19 @@ main h3 {
 	line-height: 1;
 	margin: .5375em 0;
 }
-main h4 {
+.workskin h4 {
 	font-weight: 700;
 	font-size: 1.143em;
 	line-height: 1.125;
 	margin: .5em 0;
 }
-main h5 {
+.workskin h5 {
 	font-weight: 600;
 	font-size: 1em;
 	line-height: 1.286;
 	margin: .643em 0;
 }
-main h6 {
+.workskin h6 {
 	font-size: .975em;
 	border-bottom: 1px solid;
 	font-weight: 900;
@@ -142,6 +147,8 @@ hr {
 	box-shadow: inset 0 -6px 10px rgba(0,0,0,.35) , 1px 1px 3px -1px rgba(0,0,0,.25) , inset 0 -1px 0 rgba(0,0,0,.85);
 	display: flex;
 	align-items: center;
+	position: sticky;
+	top: 0;
 }
 #skintoggle a {
 	cursor: pointer;
@@ -289,11 +296,11 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 	color: #111;
 }
 
-.default main > section a,
-.default main > section a:link,
-.default main > section a:visited:hover { color: #111; }
-.default main > section a:visited { color: #666; }
-.default main > section a:hover { color: #999; }
+.default .userstuff a,
+.default .userstuff a:link,
+.default .userstuff a:visited:hover { color: #111; }
+.default .userstuff a:visited { color: #666; }
+.default .userstuff a:hover { color: #999; }
 
 .default footer { background: #900 url(https://archiveofourown.org/images/skins/textures/tiles/red-ao3.png); }
 .default footer a { color: #fff; }
@@ -322,11 +329,11 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 .reversi #skintoggle a:not(.toggle).selected,
 .reversi #skintoggle a:not(.toggle):hover { background: #2a2a2a; }
 
-.reversi main > section a,
-.reversi main > section a:link,
-.reversi main > section a:visited:hover { color: #fff; }
-.reversi main > section a:visited { color: #999; }
-.reversi main > section a:hover { color: #bbb; }
+.reversi .userstuff a,
+.reversi .userstuff a:link,
+.reversi .userstuff a:visited:hover { color: #fff; }
+.reversi .userstuff a:visited { color: #999; }
+.reversi .userstuff a:hover { color: #bbb; }
 
 .reversi footer {
 	background: #454545 url(https://archiveofourown.org/images/skins/textures/tiles/black-noise.jpg);
@@ -367,17 +374,17 @@ div.notes .userstuff p:first-child { margin-top: 0; }
 	background: #000c;
 }
 
-.low-contrast main {
+.low-contrast .workskin {
 	margin: .75em .5em;
 	border: none;
 	background-color: #564b3f;
 }
 
-.low-contrast main > section a,
-.low-contrast main > section a:link,
-.low-contrast main > section a:visited:hover { color: #ccc; }
-.low-contrast main > section a:visited { color: #999; }
-.low-contrast main > section a:hover { color: #fff; }
+.low-contrast .userstuff a,
+.low-contrast .userstuff a:link,
+.low-contrast .userstuff a:visited:hover { color: #ccc; }
+.low-contrast .userstuff a:visited { color: #999; }
+.low-contrast .userstuff a:hover { color: #fff; }
 
 .low-contrast footer {
 	background-color: #241f18;
