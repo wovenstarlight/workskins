@@ -224,8 +224,6 @@ body footer nav a {
 	.low-contrast .sitetoggle div,
 	.low-contrast .sitetoggle div a.selected,
 	.low-contrast .sitetoggle div a:hover { background-color: rgba(0,0,0,.8); }
-	.low-contrast .sitetoggle a.selected,
-	.low-contrast .sitetoggle a:hover { color: #c22; }
 }
 
 /* Stack footer links on smaller screens */
