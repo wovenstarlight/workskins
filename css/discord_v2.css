@@ -153,11 +153,9 @@ Original image URL: https://discord.com/assets/5da4cdab01d4d89c593c48c62ae0d937.
   right: 2%;
 }
 #workskin .darkmode .channel .description::after {
-  background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),to(#36393f));
 	background: linear-gradient(90deg,rgba(54,57,63,0) 0,#36393f);
 }
 #workskin .lightmode .channel .description::after {
-  background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),to(#fff));
 	background: linear-gradient(90deg,rgba(54,57,63,0) 0,#fff);
 }
 
