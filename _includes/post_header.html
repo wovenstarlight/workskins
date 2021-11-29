@@ -4,8 +4,8 @@
 	{% else %}
 	<span class="unavailable">No AO3 preview</span>
 	{% endif %}
-	{% if page.gist_url %}
-	<span>Code on <a href="{{ page.gist_url }}">GitHub Gist</a></span>
+	{% if page.sheet_name %}
+	<span><a href="{{ page.sheet_name | prepend: '/css/' | prepend: site.baseurl }}">Workskin code</a></span>
 	{% else %}
 	<span class="unavailable">Code not available</span>
 	{% endif %}

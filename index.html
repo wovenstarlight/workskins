@@ -20,8 +20,8 @@ layout: default
 			{% else %}
 				<td class="unavailable">No AO3 preview</td>
 			{% endif %}
-			{% if post.gist_url %}
-				<td><a href="{{ post.gist_url }}">Code on GitHub Gist</a></td>
+			{% if post.sheet_name %}
+				<td><a href="{{ post.sheet_name | prepend: '/css/' | prepend: site.baseurl }}">Workskin code</a></td>
 			{% else %}
 				<td class="unavailable">Code not available</td>
 			{% endif %}
