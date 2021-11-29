@@ -1,50 +1,25 @@
-#workskin .hyj {
-	color: #ac00b1;
-}
+#workskin .hyj { color: #ac00b1 }
+#workskin .hyj2 { color: #7500b7 }
 
-#workskin .hyj2 {
-	color: #7500b7;
-}
+#workskin .hyh { color: #a30101 }
 
-#workskin .hyh {
-	color: #a30101;
-}
+#workskin .shj { color: #ba9d00 }
 
-#workskin .shj {
-	color: #ba9d00;
-}
+#workskin .gyeol { color: #ed0085 }
 
-#workskin .gyeol {
-	color: #ed0085;
-}
+#workskin .ksy { color: #0f7ee0 }
 
-#workskin .ksy {
-	color: #0f7ee0;
-}
+#workskin .byr { color: #2b1ba2 }
 
-#workskin .byr {
-	color: #2b1ba2;
-}
+#workskin .stw { color: #302f4d }
 
-#workskin .stw {
-	color: #302f4d;
-}
+#workskin .riette { color: #e2bf00 }
 
-#workskin .riette {
-	color: #e2bf00;
-}
+#workskin .noah { color: #5f8978 }
 
-#workskin .noah {
-	color: #5f8978;
-}
+#workskin .ymw { color: #d96600 }
 
-#workskin .ymw {
-	color: #d96600;
-}
-
-#workskin .mha {
-	color: #d70000;
-}
+#workskin .mha { color: #d70000 }
 
 #workskin .system.block {
 	background: #002f4d;
@@ -53,83 +28,43 @@
 }
 
 #workskin .waterdroplet,
-#workskin .wd {
-	color: #43d0f1;
-}
+#workskin .wd { color: #43d0f1 }
+#workskin .waterdroplet2,
+#workskin .wd2 { color: #0096ba }
 
 #workskin .newcomer,
-#workskin .nc {
-	color: #d7d3cd;
-}
+#workskin .nc { color: #d7d3cd }
+#workskin .newcomer2,
+#workskin .nc2 { color: #8b8883 }
 
-#workskin .tree {
-	color: #02d22c;
-}
+#workskin .tree { color: #02d22c }
+#workskin .tree2 { color: #008108 }
 
-#workskin .diarma {
-	color: #cf394d;
-}
+#workskin .diarma { color: #cf394d }
+#workskin .diarma2 { color: #7d2430 }
 
 #workskin .jellyfish,
 #workskin .jf,
-#workskin .rukafeiya {
-	color: #c595fe;
-}
+#workskin .rukafeiya { color: #c595fe }
+#workskin .jellyfish2,
+#workskin .jf2,
+#workskin .rukafeiya2 { color: #6607f1 }
 
 #workskin .chatterbox,
-#workskin .cb {
-	color: #7887ff;
-}
+#workskin .cb { color: #7887ff }
+#workskin .chatterbox2,
+#workskin .cb2 { color: #2f45ff }
 
 #workskin .whitebird,
 #workskin .wb,
 #workskin .birdwhocountsstars,
-#workskin .chirpie {
-	color: #ffc003;
-}
-
-#workskin .crescentmoon,
-#workskin .cm {
-	color: #beb577;
-}
-
-#workskin .waterdroplet2,
-#workskin .wd2 {
-	color: #0096ba;
-}
-
-#workskin .newcomer2,
-#workskin .nc2 {
-	color: #8b8883;
-}
-
-#workskin .tree2 {
-	color: #008108;
-}
-
-#workskin .diarma2 {
-	color: #7d2430;
-}
-
-#workskin .jellyfish2,
-#workskin .jf2,
-#workskin .rukafeiya2 {
-	color: #6607f1;
-}
-
-#workskin .chatterbox2,
-#workskin .cb2 {
-	color: #2f45ff;
-}
-
+#workskin .chirpie { color: #ffc003 }
 #workskin .whitebird2,
 #workskin .wb2,
 #workskin .birdwhocountsstars2,
-#workskin .chirpie2 {
-	color: #ff5400;
-}
+#workskin .chirpie2 { color: #ff5400 }
 
+#workskin .crescentmoon,
+#workskin .cm { color: #beb577 }
 #workskin .crescentmoon2,
-#workskin .cm2 {
-	color: #726938;
-}
+#workskin .cm2 { color: #726938 }
